@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DB_finalproject
 {
-    public partial class login: Form
+    public partial class loginUI: Form
     {
-        public login()
+        public loginUI()
         {
             InitializeComponent();
         }
