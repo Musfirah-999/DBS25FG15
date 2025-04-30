@@ -12,3 +12,6 @@ obj/Debug/DB_finalproject.Properties.Resources.resources
 obj/Debug/DesignTimeResolveAssemblyReferences.cache
 obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 obj/Debug/DB_finalproject.login.resources
+obj/Debug/DB_finalproject.loginUI.resources
+obj/Debug/DB_finalproject.UI.AdminhomeUI.resources
+obj/Debug/DB_finalproject.UI.supplierhomeUI.resources

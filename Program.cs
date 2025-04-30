@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DB_finalproject.UI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace DB_finalproject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new loginUI());
+            Application.Run(new supplierhomeUI());
         }
     }
 }
