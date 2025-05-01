@@ -54,6 +54,12 @@
     <Compile Include="UI\Adminhome.Designer.cs">
       <DependentUpon>Adminhome.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\CustomerUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CustomerUI.Designer.cs">
+      <DependentUpon>CustomerUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\loginUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,9 @@
     </Compile>
     <EmbeddedResource Include="UI\Adminhome.resx">
       <DependentUpon>Adminhome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CustomerUI.resx">
+      <DependentUpon>CustomerUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\loginUI.resx">
       <DependentUpon>loginUI.cs</DependentUpon>

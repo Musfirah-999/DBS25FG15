@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\Desktop\\DB_final_project\\DBS25FG15\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\hp\\Desktop\\DB_final_project\\DBS25FG15\\ui\\adminhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\adminhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|c:\\users\\hp\\desktop\\db_final_project\\dbs25fg15\\ui\\supplierhomeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\supplierhomeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|c:\\users\\hp\\desktop\\db_final_project\\dbs25fg15\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|c:\\users\\hp\\desktop\\db_final_project\\dbs25fg15\\ui\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|c:\\users\\hp\\desktop\\db_final_project\\dbs25fg15\\ui\\adminhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\adminhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|c:\\users\\hp\\desktop\\db_final_project\\dbs25fg15\\ui\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\hp\\Desktop\\DB_final_project\\DBS25FG15\\ui\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|c:\\users\\hp\\desktop\\db_final_project\\dbs25fg15\\ui\\supplierhomeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\supplierhomeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|c:\\users\\hp\\desktop\\db_final_project\\dbs25fg15\\ui\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\hp\\Desktop\\DB_final_project\\DBS25FG15\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\hp\\Desktop\\DB_final_project\\DBS25FG15\\ui\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,11 +42,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "CustomerUI.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\DB_final_project\\DBS25FG15\\UI\\CustomerUI.cs",
+              "RelativeDocumentMoniker": "UI\\CustomerUI.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\DB_final_project\\DBS25FG15\\UI\\CustomerUI.cs",
+              "RelativeToolTip": "UI\\CustomerUI.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAtwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T22:15:29.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\DB_final_project\\DBS25FG15\\UI\\CustomerUI.cs",
+              "RelativeDocumentMoniker": "UI\\CustomerUI.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\DB_final_project\\DBS25FG15\\UI\\CustomerUI.cs [Design]",
+              "RelativeToolTip": "UI\\CustomerUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T21:36:14.172Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "supplierhomeUI.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\DB_final_project\\DBS25FG15\\UI\\supplierhomeUI.cs",
+              "RelativeDocumentMoniker": "UI\\supplierhomeUI.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\DB_final_project\\DBS25FG15\\UI\\supplierhomeUI.cs",
+              "RelativeToolTip": "UI\\supplierhomeUI.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAASwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T21:05:34.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "supplierhomeUI.cs [Design]",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\DB_final_project\\DBS25FG15\\UI\\supplierhomeUI.cs",
               "RelativeDocumentMoniker": "UI\\supplierhomeUI.cs",
@@ -46,20 +96,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\DB_final_project\\DBS25FG15\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\hp\\Desktop\\DB_final_project\\DBS25FG15\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T04:07:12.505Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Adminhome.cs [Design]",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\DB_final_project\\DBS25FG15\\UI\\Adminhome.cs",
               "RelativeDocumentMoniker": "UI\\Adminhome.cs",
@@ -71,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "loginUI.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\DB_final_project\\DBS25FG15\\UI\\loginUI.cs",
               "RelativeDocumentMoniker": "UI\\loginUI.cs",

@@ -17,7 +17,7 @@ namespace DB_finalproject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new supplierhomeUI());
+            Application.Run(new CustomerUI());
         }
     }
 }

@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace DB_finalproject.UI
 {
-    public partial class supplierhomeUI: Form
+    public partial class CustomerUI: Form
     {
-        public supplierhomeUI()
+        public CustomerUI()
         {
             InitializeComponent();
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
