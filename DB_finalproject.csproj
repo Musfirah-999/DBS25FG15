@@ -100,10 +100,13 @@
   <ItemGroup>
     <Compile Include="BL\loginBL.cs" />
     <Compile Include="BL\MedicineBL.cs" />
+    <Compile Include="BL\SupplierBL.cs" />
     <Compile Include="DL\DatabaseHelper.cs" />
     <Compile Include="DL\loginDL.cs" />
     <Compile Include="DL\MedicineDL.cs" />
+    <Compile Include="DL\SupplierDL.cs" />
     <Compile Include="Models\Medicine.cs" />
+    <Compile Include="Models\Supplier.cs" />
     <Compile Include="UI\Adminhome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,11 +139,11 @@
     <Compile Include="UI\supplierhomeUI.Designer.cs">
       <DependentUpon>supplierhomeUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\SupplierUIcs.cs">
+    <Compile Include="UI\SupplierUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\SupplierUIcs.Designer.cs">
-      <DependentUpon>SupplierUIcs.cs</DependentUpon>
+    <Compile Include="UI\SupplierUI.Designer.cs">
+      <DependentUpon>SupplierUI.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="UI\Adminhome.resx">
       <DependentUpon>Adminhome.cs</DependentUpon>
@@ -166,8 +169,8 @@
     <EmbeddedResource Include="UI\supplierhomeUI.resx">
       <DependentUpon>supplierhomeUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\SupplierUIcs.resx">
-      <DependentUpon>SupplierUIcs.cs</DependentUpon>
+    <EmbeddedResource Include="UI\SupplierUI.resx">
+      <DependentUpon>SupplierUI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

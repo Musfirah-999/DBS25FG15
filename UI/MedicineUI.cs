@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DB_finalproject.BL;
 using DB_finalproject.Models;
+using DB_finalproject.DL;
 
 namespace DB_finalproject.UI
 {
@@ -21,6 +22,7 @@ namespace DB_finalproject.UI
         {
             InitializeComponent();
             LoadFromDatabase();
+            dataview();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -35,8 +37,11 @@ namespace DB_finalproject.UI
             try
             {
                 bl.AddToList(nametextBox.Text, pricetextBox.Text);
-                medicinedataGridView.DataSource = null;
-                medicinedataGridView.DataSource = bl.GetList().Select(m => new { m.Name, m.Price }).ToList();
+                bl.SaveAll();
+                LoadFromDatabase();
+                MessageBox.Show("All data saved to database.");
+                //medicinedataGridView.DataSource = null;
+                //medicinedataGridView.DataSource = bl.GetList().Select(m => new { m.Name, m.Price }).ToList();
                 nametextBox.Clear();
                 pricetextBox.Clear();
             }
@@ -48,6 +53,11 @@ namespace DB_finalproject.UI
 
         private void updatebtn_Click(object sender, EventArgs e)
         {
+            if (medicinedataGridView.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a row to update.");
+                return;
+            }
             if (medicinedataGridView.CurrentRow != null)
             {
                 int id = Convert.ToInt32(medicinedataGridView.CurrentRow.Cells["medicine_id"].Value);
@@ -66,6 +76,11 @@ namespace DB_finalproject.UI
 
         private void deletebtn_Click(object sender, EventArgs e)
         {
+            if (medicinedataGridView.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a row to delete.");
+                return;
+            }
             if (medicinedataGridView.CurrentRow != null)
             {
                 int id = Convert.ToInt32(medicinedataGridView.CurrentRow.Cells["medicine_id"].Value);
@@ -85,12 +100,15 @@ namespace DB_finalproject.UI
             medicinedataGridView.DataSource = bl.LoadFromDB();
         }
 
-        private void savebtn_Click(object sender, EventArgs e)
+        public void dataview()
         {
-
-            bl.SaveAll();
-            LoadFromDatabase();
-            MessageBox.Show("All data saved to database.");
+            DataTable dataTable = new DataTable();
+            string query1 = $"Select * from medicines";
+            dataTable = DatabaseHelper.Instance.GetDataTable(query1);
+            medicinedataGridView.DataSource = dataTable;
+            medicinedataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            medicinedataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            medicinedataGridView.Refresh();
         }
     }
 }

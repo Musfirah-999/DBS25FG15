@@ -34,27 +34,27 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.passtextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.contacttextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.emailtextBox = new System.Windows.Forms.TextBox();
             this.UserNametxt = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.nametextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.AddCustomer = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.backbtn = new System.Windows.Forms.Button();
+            this.updatebtn = new System.Windows.Forms.Button();
+            this.Addbtn = new System.Windows.Forms.Button();
+            this.deletebtn = new System.Windows.Forms.Button();
+            this.logoutpictureBox = new System.Windows.Forms.PictureBox();
+            this.supplierdataGridView = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutpictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierdataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -117,13 +117,13 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.99999F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.00001F));
-            this.tableLayoutPanel1.Controls.Add(this.textBox5, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.passtextBox, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label6, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.contacttextBox, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.emailtextBox, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.UserNametxt, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.nametextBox, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 119);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -136,14 +136,14 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(709, 245);
             this.tableLayoutPanel1.TabIndex = 19;
             // 
-            // textBox5
+            // passtextBox
             // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox5.Location = new System.Drawing.Point(419, 199);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(225, 30);
-            this.textBox5.TabIndex = 13;
+            this.passtextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.passtextBox.Location = new System.Drawing.Point(419, 199);
+            this.passtextBox.Multiline = true;
+            this.passtextBox.Name = "passtextBox";
+            this.passtextBox.Size = new System.Drawing.Size(225, 30);
+            this.passtextBox.TabIndex = 13;
             // 
             // label6
             // 
@@ -159,14 +159,14 @@
             this.label6.Text = "Enter Password";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox3
+            // contacttextBox
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.Location = new System.Drawing.Point(419, 137);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(225, 30);
-            this.textBox3.TabIndex = 7;
+            this.contacttextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.contacttextBox.Location = new System.Drawing.Point(419, 137);
+            this.contacttextBox.Multiline = true;
+            this.contacttextBox.Name = "contacttextBox";
+            this.contacttextBox.Size = new System.Drawing.Size(225, 30);
+            this.contacttextBox.TabIndex = 7;
             // 
             // label2
             // 
@@ -182,14 +182,14 @@
             this.label2.Text = "Enter Contact";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // emailtextBox
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Location = new System.Drawing.Point(419, 76);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(225, 30);
-            this.textBox2.TabIndex = 5;
+            this.emailtextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.emailtextBox.Location = new System.Drawing.Point(419, 76);
+            this.emailtextBox.Multiline = true;
+            this.emailtextBox.Name = "emailtextBox";
+            this.emailtextBox.Size = new System.Drawing.Size(225, 30);
+            this.emailtextBox.TabIndex = 5;
             // 
             // UserNametxt
             // 
@@ -205,15 +205,15 @@
             this.UserNametxt.Text = "Enter Name";
             this.UserNametxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // nametextBox
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(419, 15);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(225, 30);
-            this.textBox1.TabIndex = 3;
+            this.nametextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.nametextBox.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nametextBox.Location = new System.Drawing.Point(419, 15);
+            this.nametextBox.Multiline = true;
+            this.nametextBox.Name = "nametextBox";
+            this.nametextBox.Size = new System.Drawing.Size(225, 30);
+            this.nametextBox.TabIndex = 3;
             // 
             // label3
             // 
@@ -236,11 +236,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.button3, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.button1, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.AddCustomer, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button2, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.backbtn, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.updatebtn, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.Addbtn, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.deletebtn, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.logoutpictureBox, 0, 4);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(1067, 136);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
@@ -252,97 +252,97 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(240, 435);
             this.tableLayoutPanel2.TabIndex = 20;
             // 
-            // button3
+            // backbtn
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.backbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.Green;
-            this.button3.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(3, 288);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(234, 89);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Back";
-            this.button3.UseVisualStyleBackColor = false;
+            this.backbtn.BackColor = System.Drawing.Color.Green;
+            this.backbtn.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backbtn.ForeColor = System.Drawing.Color.White;
+            this.backbtn.Location = new System.Drawing.Point(3, 288);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(234, 89);
+            this.backbtn.TabIndex = 14;
+            this.backbtn.Text = "Back";
+            this.backbtn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // updatebtn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.updatebtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.Green;
-            this.button1.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(3, 98);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(234, 89);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Update Supplier";
-            this.button1.UseVisualStyleBackColor = false;
+            this.updatebtn.BackColor = System.Drawing.Color.Green;
+            this.updatebtn.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updatebtn.ForeColor = System.Drawing.Color.White;
+            this.updatebtn.Location = new System.Drawing.Point(3, 98);
+            this.updatebtn.Name = "updatebtn";
+            this.updatebtn.Size = new System.Drawing.Size(234, 89);
+            this.updatebtn.TabIndex = 12;
+            this.updatebtn.Text = "Update Supplier";
+            this.updatebtn.UseVisualStyleBackColor = false;
             // 
-            // AddCustomer
+            // Addbtn
             // 
-            this.AddCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Addbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddCustomer.BackColor = System.Drawing.Color.Green;
-            this.AddCustomer.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddCustomer.ForeColor = System.Drawing.Color.White;
-            this.AddCustomer.Location = new System.Drawing.Point(3, 3);
-            this.AddCustomer.Name = "AddCustomer";
-            this.AddCustomer.Size = new System.Drawing.Size(234, 89);
-            this.AddCustomer.TabIndex = 11;
-            this.AddCustomer.Text = "Add Supplier";
-            this.AddCustomer.UseVisualStyleBackColor = false;
+            this.Addbtn.BackColor = System.Drawing.Color.Green;
+            this.Addbtn.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Addbtn.ForeColor = System.Drawing.Color.White;
+            this.Addbtn.Location = new System.Drawing.Point(3, 3);
+            this.Addbtn.Name = "Addbtn";
+            this.Addbtn.Size = new System.Drawing.Size(234, 89);
+            this.Addbtn.TabIndex = 11;
+            this.Addbtn.Text = "Add Supplier";
+            this.Addbtn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // deletebtn
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.deletebtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.Green;
-            this.button2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(3, 193);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(234, 89);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Delete Supplier";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.deletebtn.BackColor = System.Drawing.Color.Green;
+            this.deletebtn.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deletebtn.ForeColor = System.Drawing.Color.White;
+            this.deletebtn.Location = new System.Drawing.Point(3, 193);
+            this.deletebtn.Name = "deletebtn";
+            this.deletebtn.Size = new System.Drawing.Size(234, 89);
+            this.deletebtn.TabIndex = 13;
+            this.deletebtn.Text = "Delete Supplier";
+            this.deletebtn.UseVisualStyleBackColor = false;
+            this.deletebtn.Click += new System.EventHandler(this.button2_Click);
             // 
-            // pictureBox1
+            // logoutpictureBox
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.logoutpictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 383);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(234, 49);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            this.logoutpictureBox.BackColor = System.Drawing.SystemColors.Control;
+            this.logoutpictureBox.Image = ((System.Drawing.Image)(resources.GetObject("logoutpictureBox.Image")));
+            this.logoutpictureBox.Location = new System.Drawing.Point(3, 383);
+            this.logoutpictureBox.Name = "logoutpictureBox";
+            this.logoutpictureBox.Size = new System.Drawing.Size(234, 49);
+            this.logoutpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logoutpictureBox.TabIndex = 15;
+            this.logoutpictureBox.TabStop = false;
             // 
-            // dataGridView1
+            // supplierdataGridView
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Green;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 387);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1056, 184);
-            this.dataGridView1.TabIndex = 21;
+            this.supplierdataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.supplierdataGridView.BackgroundColor = System.Drawing.Color.Green;
+            this.supplierdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.supplierdataGridView.Location = new System.Drawing.Point(3, 387);
+            this.supplierdataGridView.Name = "supplierdataGridView";
+            this.supplierdataGridView.Size = new System.Drawing.Size(1056, 184);
+            this.supplierdataGridView.TabIndex = 21;
             // 
             // SupplierUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1303, 572);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.supplierdataGridView);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel3);
@@ -355,8 +355,8 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutpictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierdataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -368,20 +368,20 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox contacttextBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox emailtextBox;
         private System.Windows.Forms.Label UserNametxt;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox nametextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button AddCustomer;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button backbtn;
+        private System.Windows.Forms.Button updatebtn;
+        private System.Windows.Forms.Button Addbtn;
+        private System.Windows.Forms.Button deletebtn;
+        private System.Windows.Forms.PictureBox logoutpictureBox;
+        private System.Windows.Forms.DataGridView supplierdataGridView;
+        private System.Windows.Forms.TextBox passtextBox;
         private System.Windows.Forms.Label label6;
     }
 }

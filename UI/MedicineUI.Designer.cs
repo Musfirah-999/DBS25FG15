@@ -44,14 +44,13 @@
             this.addbtn = new System.Windows.Forms.Button();
             this.deletebtn = new System.Windows.Forms.Button();
             this.medicinedataGridView = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.savebtn = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.medicinedataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -181,21 +180,19 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.savebtn, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 0, 5);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBox3, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.backbtn, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.updatebtn, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.addbtn, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.deletebtn, 0, 2);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(1054, 150);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 6;
+            this.tableLayoutPanel2.RowCount = 5;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.00637F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.00637F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.00637F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.00637F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.14892F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.825586F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(225, 422);
             this.tableLayoutPanel2.TabIndex = 21;
@@ -208,9 +205,9 @@
             this.backbtn.BackColor = System.Drawing.Color.Green;
             this.backbtn.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backbtn.ForeColor = System.Drawing.Color.White;
-            this.backbtn.Location = new System.Drawing.Point(3, 228);
+            this.backbtn.Location = new System.Drawing.Point(3, 255);
             this.backbtn.Name = "backbtn";
-            this.backbtn.Size = new System.Drawing.Size(219, 69);
+            this.backbtn.Size = new System.Drawing.Size(219, 78);
             this.backbtn.TabIndex = 14;
             this.backbtn.Text = "Back";
             this.backbtn.UseVisualStyleBackColor = false;
@@ -224,9 +221,9 @@
             this.updatebtn.BackColor = System.Drawing.Color.Green;
             this.updatebtn.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updatebtn.ForeColor = System.Drawing.Color.White;
-            this.updatebtn.Location = new System.Drawing.Point(3, 78);
+            this.updatebtn.Location = new System.Drawing.Point(3, 87);
             this.updatebtn.Name = "updatebtn";
-            this.updatebtn.Size = new System.Drawing.Size(219, 69);
+            this.updatebtn.Size = new System.Drawing.Size(219, 78);
             this.updatebtn.TabIndex = 12;
             this.updatebtn.Text = "Update Medicine";
             this.updatebtn.UseVisualStyleBackColor = false;
@@ -242,7 +239,7 @@
             this.addbtn.ForeColor = System.Drawing.Color.White;
             this.addbtn.Location = new System.Drawing.Point(3, 3);
             this.addbtn.Name = "addbtn";
-            this.addbtn.Size = new System.Drawing.Size(219, 69);
+            this.addbtn.Size = new System.Drawing.Size(219, 78);
             this.addbtn.TabIndex = 11;
             this.addbtn.Text = "Add Medicine";
             this.addbtn.UseVisualStyleBackColor = false;
@@ -256,9 +253,9 @@
             this.deletebtn.BackColor = System.Drawing.Color.Green;
             this.deletebtn.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deletebtn.ForeColor = System.Drawing.Color.White;
-            this.deletebtn.Location = new System.Drawing.Point(3, 153);
+            this.deletebtn.Location = new System.Drawing.Point(3, 171);
             this.deletebtn.Name = "deletebtn";
-            this.deletebtn.Size = new System.Drawing.Size(219, 69);
+            this.deletebtn.Size = new System.Drawing.Size(219, 78);
             this.deletebtn.TabIndex = 13;
             this.deletebtn.Text = "Delete Customer";
             this.deletebtn.UseVisualStyleBackColor = false;
@@ -274,35 +271,19 @@
             this.medicinedataGridView.Size = new System.Drawing.Size(1049, 238);
             this.medicinedataGridView.TabIndex = 22;
             // 
-            // pictureBox1
+            // pictureBox3
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 379);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(219, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
-            // savebtn
-            // 
-            this.savebtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.savebtn.BackColor = System.Drawing.Color.Green;
-            this.savebtn.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.savebtn.ForeColor = System.Drawing.Color.White;
-            this.savebtn.Location = new System.Drawing.Point(3, 303);
-            this.savebtn.Name = "savebtn";
-            this.savebtn.Size = new System.Drawing.Size(219, 70);
-            this.savebtn.TabIndex = 17;
-            this.savebtn.Text = "Save";
-            this.savebtn.UseVisualStyleBackColor = false;
-            this.savebtn.Click += new System.EventHandler(this.savebtn_Click);
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(3, 339);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(219, 80);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
             // 
             // MedicineUI
             // 
@@ -322,7 +303,7 @@
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.medicinedataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -344,7 +325,6 @@
         private System.Windows.Forms.Button addbtn;
         private System.Windows.Forms.Button deletebtn;
         private System.Windows.Forms.DataGridView medicinedataGridView;
-        private System.Windows.Forms.Button savebtn;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

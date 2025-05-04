@@ -39,9 +39,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.medilane = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.medilane = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -140,7 +140,7 @@
             this.SelectRole.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SelectRole.FormattingEnabled = true;
             this.SelectRole.Items.AddRange(new object[] {
-            "Admin",
+            "Pharmacist",
             "Supplier",
             "Customer"});
             this.SelectRole.Location = new System.Drawing.Point(431, 115);
@@ -185,19 +185,6 @@
             this.panel1.Size = new System.Drawing.Size(860, 105);
             this.panel1.TabIndex = 8;
             // 
-            // medilane
-            // 
-            this.medilane.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.medilane.Font = new System.Drawing.Font("Cambria", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medilane.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.medilane.Location = new System.Drawing.Point(218, 38);
-            this.medilane.Name = "medilane";
-            this.medilane.Size = new System.Drawing.Size(485, 46);
-            this.medilane.TabIndex = 0;
-            this.medilane.Text = "Medilane Pharmacy ";
-            this.medilane.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -221,6 +208,19 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Medilane Pharmacy ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // medilane
+            // 
+            this.medilane.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.medilane.Font = new System.Drawing.Font("Cambria", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.medilane.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.medilane.Location = new System.Drawing.Point(218, 38);
+            this.medilane.Name = "medilane";
+            this.medilane.Size = new System.Drawing.Size(485, 46);
+            this.medilane.TabIndex = 0;
+            this.medilane.Text = "Medilane Pharmacy ";
+            this.medilane.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox2
             // 

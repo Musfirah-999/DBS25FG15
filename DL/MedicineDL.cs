@@ -44,6 +44,7 @@ namespace DB_finalproject.DL
         }
         public DataTable GetALL()
         {
+
             return DatabaseHelper.Instance.GetDataTable("SELECT * FROM medicines");
 
         }
