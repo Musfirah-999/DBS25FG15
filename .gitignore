@@ -50,3 +50,5 @@ bin/Debug/System.Runtime.CompilerServices.Unsafe.dll
 bin/Debug/System.Memory.xml
 bin/Debug/System.Numerics.Vectors.dll
 bin/Debug/System.Numerics.Vectors.xml
+DL/DatabaseHelper.cs
+DL/DatabaseHelper.cs
