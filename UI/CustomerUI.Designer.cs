@@ -43,14 +43,14 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.contactbox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.emailbox = new System.Windows.Forms.TextBox();
             this.UserNametxt = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.NameBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.address = new System.Windows.Forms.TextBox();
+            this.pass_box = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -215,6 +215,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(4, 437);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.Size = new System.Drawing.Size(1005, 221);
             this.dataGridView1.TabIndex = 17;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -229,14 +230,14 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.00001F));
             this.tableLayoutPanel1.Controls.Add(this.label6, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.contactbox, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.emailbox, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.UserNametxt, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.NameBox, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox5, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.address, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pass_box, 1, 4);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-6, 140);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
@@ -276,14 +277,14 @@
             this.label5.Text = "Enter Address";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox3
+            // contactbox
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.Location = new System.Drawing.Point(458, 130);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(225, 30);
-            this.textBox3.TabIndex = 7;
+            this.contactbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.contactbox.Location = new System.Drawing.Point(458, 130);
+            this.contactbox.Multiline = true;
+            this.contactbox.Name = "contactbox";
+            this.contactbox.Size = new System.Drawing.Size(225, 30);
+            this.contactbox.TabIndex = 7;
             // 
             // label2
             // 
@@ -299,14 +300,14 @@
             this.label2.Text = "Enter Contact";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // emailbox
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Location = new System.Drawing.Point(458, 72);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(225, 30);
-            this.textBox2.TabIndex = 5;
+            this.emailbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.emailbox.Location = new System.Drawing.Point(458, 72);
+            this.emailbox.Multiline = true;
+            this.emailbox.Name = "emailbox";
+            this.emailbox.Size = new System.Drawing.Size(225, 30);
+            this.emailbox.TabIndex = 5;
             // 
             // UserNametxt
             // 
@@ -322,15 +323,15 @@
             this.UserNametxt.Text = "Enter Name";
             this.UserNametxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // NameBox
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(458, 14);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(225, 30);
-            this.textBox1.TabIndex = 3;
+            this.NameBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.NameBox.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameBox.Location = new System.Drawing.Point(458, 14);
+            this.NameBox.Multiline = true;
+            this.NameBox.Name = "NameBox";
+            this.NameBox.Size = new System.Drawing.Size(225, 30);
+            this.NameBox.TabIndex = 3;
             // 
             // label3
             // 
@@ -346,27 +347,27 @@
             this.label3.Text = "Enter Email";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox4
+            // address
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.Location = new System.Drawing.Point(458, 188);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(225, 30);
-            this.textBox4.TabIndex = 8;
+            this.address.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.address.Location = new System.Drawing.Point(458, 188);
+            this.address.Multiline = true;
+            this.address.Name = "address";
+            this.address.Size = new System.Drawing.Size(225, 30);
+            this.address.TabIndex = 8;
             // 
-            // textBox5
+            // pass_box
             // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox5.Location = new System.Drawing.Point(458, 246);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(225, 30);
-            this.textBox5.TabIndex = 9;
+            this.pass_box.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pass_box.Location = new System.Drawing.Point(458, 246);
+            this.pass_box.Multiline = true;
+            this.pass_box.Name = "pass_box";
+            this.pass_box.Size = new System.Drawing.Size(225, 30);
+            this.pass_box.TabIndex = 9;
             // 
             // CustomerUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1279, 645);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -404,13 +405,13 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox contactbox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox emailbox;
         private System.Windows.Forms.Label UserNametxt;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox NameBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox address;
+        private System.Windows.Forms.TextBox pass_box;
     }
 }

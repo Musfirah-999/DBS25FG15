@@ -13,7 +13,7 @@ namespace DB_finalproject.DL
         private string port = "3306";
         private string databaseName = "medilane_pharmacy";
         private string databaseUser = "root";
-        private string databasePassword = "Musfirahzainab123@";
+        private string databasePassword = "Aimanrehman123?";
 
         private DatabaseHelper() { }
 
