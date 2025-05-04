@@ -266,6 +266,7 @@
             this.backbtn.TabIndex = 14;
             this.backbtn.Text = "Back";
             this.backbtn.UseVisualStyleBackColor = false;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
             // updatebtn
             // 
@@ -281,6 +282,7 @@
             this.updatebtn.TabIndex = 12;
             this.updatebtn.Text = "Update Supplier";
             this.updatebtn.UseVisualStyleBackColor = false;
+            this.updatebtn.Click += new System.EventHandler(this.updatebtn_Click);
             // 
             // Addbtn
             // 
@@ -296,6 +298,7 @@
             this.Addbtn.TabIndex = 11;
             this.Addbtn.Text = "Add Supplier";
             this.Addbtn.UseVisualStyleBackColor = false;
+            this.Addbtn.Click += new System.EventHandler(this.Addbtn_Click);
             // 
             // deletebtn
             // 

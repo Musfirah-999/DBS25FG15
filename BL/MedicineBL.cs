@@ -31,10 +31,7 @@ namespace DB_finalproject.BL
             dl.AddToList(m);
 
         }
-        public List<Medicine> GetList()
-        {
-            return dl.GetList();
-        }
+       
         public void SaveAll()
         {
             foreach (var m in dl.GetList())
