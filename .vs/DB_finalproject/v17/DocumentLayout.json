@@ -3,23 +3,39 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\DBS25FG15\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\User\\Desktop\\DBS25FG15\\ui\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|c:\\users\\user\\desktop\\dbs25fg15\\ui\\customerui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\customerui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\User\\Desktop\\DBS25FG15\\dl\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:dl\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\User\\Desktop\\DBS25FG15\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\User\\Desktop\\DBS25FG15\\dl\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:dl\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\User\\Desktop\\DBS25FG15\\dl\\customerdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:dl\\customerdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|c:\\users\\user\\desktop\\dbs25fg15\\ui\\supplierui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\User\\Desktop\\DBS25FG15\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|c:\\users\\user\\desktop\\dbs25fg15\\ui\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\User\\Desktop\\DBS25FG15\\ui\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\User\\Desktop\\DBS25FG15\\bl\\customerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:bl\\customerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\User\\Desktop\\DBS25FG15\\ui\\customerui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\customerui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\User\\Desktop\\DBS25FG15\\ui\\supplierui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\supplierui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -55,10 +71,6 @@
       "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:dl\\medicinedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\User\\Desktop\\DBS25FG15\\ui\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\User\\Desktop\\DBS25FG15\\ui\\adminhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\adminhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -90,73 +102,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CustomerUI.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\CustomerUI.Designer.cs",
-              "RelativeDocumentMoniker": "UI\\CustomerUI.Designer.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\CustomerUI.Designer.cs",
-              "RelativeToolTip": "UI\\CustomerUI.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T19:34:06.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "supplierhomeUI.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\supplierhomeUI.cs",
-              "RelativeDocumentMoniker": "UI\\supplierhomeUI.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\DB_final_project\\DBS25FG15\\UI\\supplierhomeUI.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\hp\\Desktop\\DB_final_project\\DBS25FG15\\UI\\supplierhomeUI.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T06:34:19.894Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MedicineUI.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\MedicineUI.cs",
-              "RelativeDocumentMoniker": "UI\\MedicineUI.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\MedicineUI.cs",
-              "RelativeToolTip": "UI\\MedicineUI.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowF8AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T05:54:05.242Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\DBS25FG15\\Models\\Customer.cs",
+              "RelativeToolTip": "Models\\Customer.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T18:17:02.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerDL.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\DL\\CustomerDL.cs",
+              "RelativeDocumentMoniker": "DL\\CustomerDL.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\DBS25FG15\\DL\\CustomerDL.cs",
+              "RelativeToolTip": "DL\\CustomerDL.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowCcAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T18:16:45.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CustomerBL.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\BL\\CustomerBL.cs",
+              "RelativeDocumentMoniker": "BL\\CustomerBL.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\DBS25FG15\\BL\\CustomerBL.cs",
+              "RelativeToolTip": "BL\\CustomerBL.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAQwFwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T18:16:22.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "DatabaseHelper.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\DL\\DatabaseHelper.cs",
               "RelativeDocumentMoniker": "DL\\DatabaseHelper.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\DBS25FG15\\DL\\DatabaseHelper.cs",
               "RelativeToolTip": "DL\\DatabaseHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAA8wDQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-03T03:29:22.731Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\DBS25FG15\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T04:07:12.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "CustomerUI.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\CustomerUI.cs",
               "RelativeDocumentMoniker": "UI\\CustomerUI.cs",
@@ -168,7 +173,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
+              "Title": "CustomerUI.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\CustomerUI.cs",
+              "RelativeDocumentMoniker": "UI\\CustomerUI.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\CustomerUI.cs",
+              "RelativeToolTip": "UI\\CustomerUI.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAIwGMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T22:15:29.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\DBS25FG15\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T04:07:12.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MedicineUI.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\MedicineUI.cs",
+              "RelativeDocumentMoniker": "UI\\MedicineUI.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\MedicineUI.cs",
+              "RelativeToolTip": "UI\\MedicineUI.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowF8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T05:54:05.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "supplierhomeUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\supplierhomeUI.cs",
+              "RelativeDocumentMoniker": "UI\\supplierhomeUI.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\DB_final_project\\DBS25FG15\\UI\\supplierhomeUI.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\hp\\Desktop\\DB_final_project\\DBS25FG15\\UI\\supplierhomeUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T06:34:19.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomerUI.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\CustomerUI.Designer.cs",
+              "RelativeDocumentMoniker": "UI\\CustomerUI.Designer.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\CustomerUI.Designer.cs*",
+              "RelativeToolTip": "UI\\CustomerUI.Designer.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T19:34:06.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Supplier.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\Models\\Supplier.cs",
               "RelativeDocumentMoniker": "Models\\Supplier.cs",
@@ -180,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "SupplierDL.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\DL\\SupplierDL.cs",
               "RelativeDocumentMoniker": "DL\\SupplierDL.cs",
@@ -192,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "SupplierBL.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\BL\\SupplierBL.cs",
               "RelativeDocumentMoniker": "BL\\SupplierBL.cs",
@@ -203,12 +269,8 @@
               "WhenOpened": "2025-05-03T18:03:45.492Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "SupplierUI.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\SupplierUI.cs",
               "RelativeDocumentMoniker": "UI\\SupplierUI.cs",
@@ -216,12 +278,11 @@
               "RelativeToolTip": "UI\\SupplierUI.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAUwFsAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T02:03:00.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T02:03:00.666Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "SupplierUI.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\SupplierUI.cs",
               "RelativeDocumentMoniker": "UI\\SupplierUI.cs",
@@ -232,20 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CustomerUI.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\CustomerUI.cs",
-              "RelativeDocumentMoniker": "UI\\CustomerUI.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\CustomerUI.cs",
-              "RelativeToolTip": "UI\\CustomerUI.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAnwBoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T22:15:29.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Adminhome.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\Adminhome.cs",
               "RelativeDocumentMoniker": "UI\\Adminhome.cs",
@@ -256,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "MedicineDL.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\DL\\MedicineDL.cs",
               "RelativeDocumentMoniker": "DL\\MedicineDL.cs",
@@ -268,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "MedicineBL.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\BL\\MedicineBL.cs",
               "RelativeDocumentMoniker": "BL\\MedicineBL.cs",
@@ -280,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "loginUI.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\loginUI.cs",
               "RelativeDocumentMoniker": "UI\\loginUI.cs",
@@ -291,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "MedicineUI.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\MedicineUI.cs",
               "RelativeDocumentMoniker": "UI\\MedicineUI.cs",
@@ -302,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "MedicineUI.Designer.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\MedicineUI.Designer.cs",
               "RelativeDocumentMoniker": "UI\\MedicineUI.Designer.cs",
@@ -314,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "supplierhomeUI.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\supplierhomeUI.cs",
               "RelativeDocumentMoniker": "UI\\supplierhomeUI.cs",
@@ -326,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "loginUI.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\DBS25FG15\\UI\\loginUI.cs",
               "RelativeDocumentMoniker": "UI\\loginUI.cs",

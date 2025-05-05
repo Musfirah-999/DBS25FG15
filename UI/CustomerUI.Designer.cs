@@ -39,23 +39,23 @@
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.datagrid = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.contactbox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.emailbox = new System.Windows.Forms.TextBox();
+            this.emailBox = new System.Windows.Forms.TextBox();
             this.UserNametxt = new System.Windows.Forms.Label();
-            this.NameBox = new System.Windows.Forms.TextBox();
+            this.Namebox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.address = new System.Windows.Forms.TextBox();
-            this.pass_box = new System.Windows.Forms.TextBox();
+            this.passbox = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datagrid)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,6 +114,7 @@
             this.AddCustomer.TabIndex = 11;
             this.AddCustomer.Text = "Add Customer";
             this.AddCustomer.UseVisualStyleBackColor = false;
+            this.AddCustomer.Click += new System.EventHandler(this.AddCustomer_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -152,6 +153,7 @@
             this.button3.TabIndex = 14;
             this.button3.Text = "Back";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
@@ -167,6 +169,7 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "Update Customer";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -182,6 +185,7 @@
             this.button2.TabIndex = 13;
             this.button2.Text = "Delete Customer";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
             // 
@@ -208,17 +212,17 @@
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
             // 
-            // dataGridView1
+            // datagrid
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Green;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 437);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(1005, 221);
-            this.dataGridView1.TabIndex = 17;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.datagrid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.datagrid.BackgroundColor = System.Drawing.Color.Green;
+            this.datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datagrid.Location = new System.Drawing.Point(4, 437);
+            this.datagrid.Name = "datagrid";
+            this.datagrid.RowHeadersWidth = 62;
+            this.datagrid.Size = new System.Drawing.Size(1005, 221);
+            this.datagrid.TabIndex = 17;
+            this.datagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // tableLayoutPanel1
             // 
@@ -232,12 +236,12 @@
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.contactbox, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.emailbox, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.emailBox, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.UserNametxt, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.NameBox, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Namebox, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.address, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pass_box, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.passbox, 1, 4);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-6, 140);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
@@ -300,14 +304,14 @@
             this.label2.Text = "Enter Contact";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // emailbox
+            // emailBox
             // 
-            this.emailbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.emailbox.Location = new System.Drawing.Point(458, 72);
-            this.emailbox.Multiline = true;
-            this.emailbox.Name = "emailbox";
-            this.emailbox.Size = new System.Drawing.Size(225, 30);
-            this.emailbox.TabIndex = 5;
+            this.emailBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.emailBox.Location = new System.Drawing.Point(458, 72);
+            this.emailBox.Multiline = true;
+            this.emailBox.Name = "emailBox";
+            this.emailBox.Size = new System.Drawing.Size(225, 30);
+            this.emailBox.TabIndex = 5;
             // 
             // UserNametxt
             // 
@@ -323,15 +327,15 @@
             this.UserNametxt.Text = "Enter Name";
             this.UserNametxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // NameBox
+            // Namebox
             // 
-            this.NameBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.NameBox.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameBox.Location = new System.Drawing.Point(458, 14);
-            this.NameBox.Multiline = true;
-            this.NameBox.Name = "NameBox";
-            this.NameBox.Size = new System.Drawing.Size(225, 30);
-            this.NameBox.TabIndex = 3;
+            this.Namebox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Namebox.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Namebox.Location = new System.Drawing.Point(458, 14);
+            this.Namebox.Multiline = true;
+            this.Namebox.Name = "Namebox";
+            this.Namebox.Size = new System.Drawing.Size(225, 30);
+            this.Namebox.TabIndex = 3;
             // 
             // label3
             // 
@@ -356,14 +360,14 @@
             this.address.Size = new System.Drawing.Size(225, 30);
             this.address.TabIndex = 8;
             // 
-            // pass_box
+            // passbox
             // 
-            this.pass_box.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pass_box.Location = new System.Drawing.Point(458, 246);
-            this.pass_box.Multiline = true;
-            this.pass_box.Name = "pass_box";
-            this.pass_box.Size = new System.Drawing.Size(225, 30);
-            this.pass_box.TabIndex = 9;
+            this.passbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.passbox.Location = new System.Drawing.Point(458, 246);
+            this.passbox.Multiline = true;
+            this.passbox.Name = "passbox";
+            this.passbox.Size = new System.Drawing.Size(225, 30);
+            this.passbox.TabIndex = 9;
             // 
             // CustomerUI
             // 
@@ -371,7 +375,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1279, 645);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.datagrid);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.panel3);
@@ -383,7 +387,7 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datagrid)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -401,17 +405,17 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView datagrid;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox contactbox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox emailbox;
+        private System.Windows.Forms.TextBox emailBox;
         private System.Windows.Forms.Label UserNametxt;
-        private System.Windows.Forms.TextBox NameBox;
+        private System.Windows.Forms.TextBox Namebox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox address;
-        private System.Windows.Forms.TextBox pass_box;
+        private System.Windows.Forms.TextBox passbox;
     }
 }

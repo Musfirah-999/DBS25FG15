@@ -98,13 +98,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\CustomerBL.cs" />
     <Compile Include="BL\loginBL.cs" />
     <Compile Include="BL\MedicineBL.cs" />
     <Compile Include="BL\SupplierBL.cs" />
+    <Compile Include="DL\CustomerDL.cs" />
     <Compile Include="DL\DatabaseHelper.cs" />
     <Compile Include="DL\loginDL.cs" />
     <Compile Include="DL\MedicineDL.cs" />
     <Compile Include="DL\SupplierDL.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Medicine.cs" />
     <Compile Include="Models\Supplier.cs" />
     <Compile Include="UI\Adminhome.cs">
