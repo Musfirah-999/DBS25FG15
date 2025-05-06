@@ -36,6 +36,10 @@ namespace DB_finalproject.BL
             {
                 throw new Exception("Password cannot be empty.");
             }
+            if (dl.Exists(password))
+            {
+                throw new Exception("Password already exists.");
+            }
             if (dl.Exists(email))
             {
                 throw new Exception("Email already exists.");
@@ -71,6 +75,19 @@ namespace DB_finalproject.BL
         }
         public void Update(int id, string name, string email, string contact, string password )
         {
+            if (string.IsNullOrWhiteSpace(password))
+            {
+                throw new Exception("Password cannot be empty.");
+            }
+            if (dl.Exists(password))
+            {
+                throw new Exception("Password already exists.");
+            }
+            if (dl.Exists(email))
+            {
+                throw new Exception("Email already exists.");
+            }
+      
             if (!Regex.IsMatch(contact, @"^\d{11}$"))
             {
                 MessageBox.Show("Contact number must be exactly 11 digits.");
