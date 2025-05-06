@@ -42,8 +42,8 @@ namespace DB_finalproject.BL
             }
             if (!Regex.IsMatch(contact, @"^\d{11}$"))
             {
-                MessageBox.Show("Contact number must be exactly 11 digits.");
-                return;
+                throw new Exception("Contact number must be exactly 11 digits.");
+              
             }
 
 
