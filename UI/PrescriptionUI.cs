@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace DB_finalproject.UI
 {
-    public partial class supplierhomeUI: Form
+    public partial class PrescriptionUI: Form
     {
-        public supplierhomeUI()
+        public PrescriptionUI()
         {
             InitializeComponent();
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void Logout_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

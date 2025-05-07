@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace DB_finalproject.UI
 {
-    public partial class supplierhomeUI: Form
+    public partial class StockRequestUI: Form
     {
-        public supplierhomeUI()
+        public StockRequestUI()
         {
             InitializeComponent();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Logout_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
