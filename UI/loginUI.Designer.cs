@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginUI));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.UserNametxt = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.SelectRole = new System.Windows.Forms.ComboBox();
+            this.CmbRole = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -43,6 +43,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.medilane = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Login = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -59,11 +60,11 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtPassword, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.UserNametxt, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtUsername, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.SelectRole, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.CmbRole, 1, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(190, 222);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
@@ -87,14 +88,14 @@
             this.label2.Text = "Select Role";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Location = new System.Drawing.Point(428, 60);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(225, 30);
-            this.textBox2.TabIndex = 5;
+            this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPassword.Location = new System.Drawing.Point(428, 60);
+            this.txtPassword.Multiline = true;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(225, 30);
+            this.txtPassword.TabIndex = 5;
             // 
             // UserNametxt
             // 
@@ -110,15 +111,15 @@
             this.UserNametxt.Text = "Enter UserName";
             this.UserNametxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // txtUsername
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(428, 10);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(225, 30);
-            this.textBox1.TabIndex = 3;
+            this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtUsername.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(428, 10);
+            this.txtUsername.Multiline = true;
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(225, 30);
+            this.txtUsername.TabIndex = 3;
             // 
             // label1
             // 
@@ -134,19 +135,19 @@
             this.label1.Text = "Enter Password";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // SelectRole
+            // CmbRole
             // 
-            this.SelectRole.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.SelectRole.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SelectRole.FormattingEnabled = true;
-            this.SelectRole.Items.AddRange(new object[] {
+            this.CmbRole.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CmbRole.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbRole.FormattingEnabled = true;
+            this.CmbRole.Items.AddRange(new object[] {
             "Pharmacist",
             "Supplier",
             "Customer"});
-            this.SelectRole.Location = new System.Drawing.Point(431, 115);
-            this.SelectRole.Name = "SelectRole";
-            this.SelectRole.Size = new System.Drawing.Size(219, 23);
-            this.SelectRole.TabIndex = 7;
+            this.CmbRole.Location = new System.Drawing.Point(431, 115);
+            this.CmbRole.Name = "CmbRole";
+            this.CmbRole.Size = new System.Drawing.Size(219, 23);
+            this.CmbRole.TabIndex = 7;
             // 
             // panel2
             // 
@@ -233,17 +234,33 @@
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
+            // Login
+            // 
+            this.Login.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Login.BackColor = System.Drawing.Color.Green;
+            this.Login.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Login.ForeColor = System.Drawing.Color.White;
+            this.Login.Location = new System.Drawing.Point(484, 466);
+            this.Login.Name = "Login";
+            this.Login.Size = new System.Drawing.Size(237, 52);
+            this.Login.TabIndex = 13;
+            this.Login.Text = "Login";
+            this.Login.UseVisualStyleBackColor = false;
+            this.Login.Click += new System.EventHandler(this.Login_Click);
+            // 
             // loginUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1027, 516);
+            this.Controls.Add(this.Login);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "loginUI";
+            this.Text = "LoginUI";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -257,11 +274,11 @@
         #endregion
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label UserNametxt;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox SelectRole;
+        private System.Windows.Forms.ComboBox CmbRole;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
@@ -269,6 +286,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button Login;
     }
 }
 

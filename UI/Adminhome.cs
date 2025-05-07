@@ -16,5 +16,57 @@ namespace DB_finalproject.UI
         {
             InitializeComponent();
         }
+
+        private void MedicineMenu_Click(object sender, EventArgs e)
+        {
+            MedicineMenu medicine = new MedicineMenu();
+            medicine.Show();
+        }
+
+        private void Customer_Click(object sender, EventArgs e)
+        {
+            CustomerMenu customer = new CustomerMenu();
+            customer.Show();
+        }
+
+        private void Supplier_Click(object sender, EventArgs e)
+        {
+            SupplierUI supplier = new SupplierUI();
+            supplier.Show();
+            this.Hide();
+        }
+
+        private void CustomerBill_Click(object sender, EventArgs e)
+        {
+            CustomerBillUI customer = new CustomerBillUI();
+            customer.Show();
+            this.Hide();
+        }
+
+        private void Inventory_Click(object sender, EventArgs e)
+        {
+            InventoryLog inventory = new InventoryLog();
+            inventory.Show();
+            this.Hide();
+        }
+
+        private void PurchaseOrder_Click(object sender, EventArgs e)
+        {
+            PurchaseOrder purchase = new PurchaseOrder();
+            purchase.Show();
+            this.Hide();
+        }
+
+        private void stock_Click(object sender, EventArgs e)
+        {
+            StockMenu stock = new StockMenu();
+            stock.Show();
+            this.Hide();
+        }
+
+        private void Logout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
