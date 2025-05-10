@@ -100,17 +100,27 @@
   <ItemGroup>
     <Compile Include="BL\CustomerBL.cs" />
     <Compile Include="BL\MedicineBL.cs" />
+    <Compile Include="BL\medicine_batchBL.cs" />
+    <Compile Include="BL\StBL.cs" />
+    <Compile Include="BL\StDetailBL.cs" />
     <Compile Include="BL\SupplierBL.cs" />
     <Compile Include="BL\UserBL.cs" />
     <Compile Include="DL\CustomerDL.cs" />
     <Compile Include="DL\DatabaseHelper.cs" />
     <Compile Include="DL\MedicineDL.cs" />
+    <Compile Include="DL\Medicine_batchDL.cs" />
+    <Compile Include="DL\StDetailDL.cs" />
+    <Compile Include="DL\StDL.cs" />
     <Compile Include="DL\SupplierDL.cs" />
     <Compile Include="DL\UserDL.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Medicine.cs" />
+    <Compile Include="Models\Medicine_batch.cs" />
+    <Compile Include="Models\ST.cs" />
+    <Compile Include="Models\StDetail.cs" />
     <Compile Include="Models\Supplier.cs" />
     <Compile Include="Models\UserModel.cs" />
+    <Compile Include="SessionManager.cs" />
     <Compile Include="UI\Adminhome.cs">
       <SubType>Form</SubType>
     </Compile>

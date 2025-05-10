@@ -38,13 +38,11 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.datagrid = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.suppcombobox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.contactbox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.emailBox = new System.Windows.Forms.TextBox();
-            this.UserNametxt = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.contactbox = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -108,6 +106,7 @@
             this.AddCustomer.TabIndex = 11;
             this.AddCustomer.Text = "Add Stock Request";
             this.AddCustomer.UseVisualStyleBackColor = false;
+            this.AddCustomer.Click += new System.EventHandler(this.AddCustomer_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -143,6 +142,7 @@
             this.button2.TabIndex = 13;
             this.button2.Text = "Delete Stock Request";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -188,23 +188,29 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.99999F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.00001F));
-            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.emailBox, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.UserNametxt, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.contactbox, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.dateTimePicker1, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.suppcombobox, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.dateTimePicker1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.contactbox, 1, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-6, 140);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(762, 291);
             this.tableLayoutPanel1.TabIndex = 18;
+            // 
+            // suppcombobox
+            // 
+            this.suppcombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.suppcombobox.FormattingEnabled = true;
+            this.suppcombobox.Location = new System.Drawing.Point(457, 38);
+            this.suppcombobox.Name = "suppcombobox";
+            this.suppcombobox.Size = new System.Drawing.Size(228, 24);
+            this.suppcombobox.TabIndex = 14;
             // 
             // label5
             // 
@@ -213,21 +219,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 216);
+            this.label5.Location = new System.Drawing.Point(3, 194);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(374, 75);
+            this.label5.Size = new System.Drawing.Size(374, 97);
             this.label5.TabIndex = 10;
             this.label5.Text = "Status";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // contactbox
-            // 
-            this.contactbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.contactbox.Location = new System.Drawing.Point(458, 238);
-            this.contactbox.Multiline = true;
-            this.contactbox.Name = "contactbox";
-            this.contactbox.Size = new System.Drawing.Size(225, 30);
-            this.contactbox.TabIndex = 7;
             // 
             // label2
             // 
@@ -236,35 +233,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 144);
+            this.label2.Location = new System.Drawing.Point(3, 97);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(374, 72);
+            this.label2.Size = new System.Drawing.Size(374, 97);
             this.label2.TabIndex = 6;
             this.label2.Text = "Date";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // emailBox
-            // 
-            this.emailBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.emailBox.Location = new System.Drawing.Point(458, 93);
-            this.emailBox.Multiline = true;
-            this.emailBox.Name = "emailBox";
-            this.emailBox.Size = new System.Drawing.Size(225, 30);
-            this.emailBox.TabIndex = 5;
-            // 
-            // UserNametxt
-            // 
-            this.UserNametxt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.UserNametxt.AutoSize = true;
-            this.UserNametxt.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserNametxt.Location = new System.Drawing.Point(3, 0);
-            this.UserNametxt.Name = "UserNametxt";
-            this.UserNametxt.Size = new System.Drawing.Size(374, 72);
-            this.UserNametxt.TabIndex = 0;
-            this.UserNametxt.Text = "Pharmacist Name";
-            this.UserNametxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -273,26 +247,26 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 72);
+            this.label3.Location = new System.Drawing.Point(3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(374, 72);
+            this.label3.Size = new System.Drawing.Size(374, 97);
             this.label3.TabIndex = 4;
             this.label3.Text = "Supplier Name";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // contactbox
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(457, 25);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(228, 24);
-            this.comboBox1.TabIndex = 12;
+            this.contactbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.contactbox.Location = new System.Drawing.Point(458, 227);
+            this.contactbox.Multiline = true;
+            this.contactbox.Name = "contactbox";
+            this.contactbox.Size = new System.Drawing.Size(225, 30);
+            this.contactbox.TabIndex = 7;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker1.Location = new System.Drawing.Point(471, 169);
+            this.dateTimePicker1.Location = new System.Drawing.Point(471, 134);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 13;
@@ -311,6 +285,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StockRequestUI";
             this.Text = "StockRequestUI";
+            this.Load += new System.EventHandler(this.StockRequestUI_Load);
             this.panel3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -335,10 +310,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox contactbox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox emailBox;
-        private System.Windows.Forms.Label UserNametxt;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox suppcombobox;
     }
 }

@@ -40,7 +40,7 @@ namespace DB_finalproject.DL
             var connection = getConnection();
             connection.Open();
             var command = new MySqlCommand(query, connection);
-            return command.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
+            return command.ExecuteReader(System.Data.CommandBehavior.CloseConnection); 
         }
 
         public System.Data.DataTable GetDataTable(string query)
@@ -67,13 +67,10 @@ namespace DB_finalproject.DL
             }
         }
 
-        public int Scaler(string query)
-        {
-            using (var connection = getConnection())
-            {
+        public int Scaler(string query) {
+            using (var connection = getConnection()) {
                 connection.Open();
-                using (var command = new MySqlCommand(query, connection))
-                {
+                using (var command = new MySqlCommand(query, connection)) {
                     object result = command.ExecuteScalar();
                     return result == null ? 0 : Convert.ToInt32(result);
                 }
