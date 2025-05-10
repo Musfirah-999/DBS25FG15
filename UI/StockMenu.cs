@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace DB_finalproject.UI
+{
+    public partial class StockMenu: Form
+    {
+        public StockMenu()
+        {
+            InitializeComponent();
+        }
+
+        private void StockRequest_Click(object sender, EventArgs e)
+        {
+            StockRequestUI stock = new StockRequestUI();
+            stock.Show();
+            this.Hide();
+        }
+
+        private void StockRequestDetails_Click(object sender, EventArgs e)
+        {
+            StockRequestDetails stock = new StockRequestDetails();
+            stock.Show();
+            this.Hide();
+        }
+    }
+}
