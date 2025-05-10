@@ -16,5 +16,10 @@ namespace DB_finalproject.UI
         {
             InitializeComponent();
         }
+
+        private void AdminhomeUI_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
