@@ -79,3 +79,5 @@ obj/Release/DB_finalproject.csproj.AssemblyReference.cache
 .vs/DB_finalproject.csproj.dtbcache.json
 .vs/DB_finalproject/v17/.suo
 DL/DatabaseHelper.cs
+/.vs/DB_finalproject/v17
+*.vsidx
