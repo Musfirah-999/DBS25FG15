@@ -17,6 +17,12 @@ namespace DB_finalproject.UI
             InitializeComponent();
         }
 
+
+        private void AdminhomeUI_Load(object sender, EventArgs e)
+        {
+        }
+
+
         private void MedicineMenu_Click(object sender, EventArgs e)
         {
             MedicineMenu medicine = new MedicineMenu();
@@ -69,6 +75,7 @@ namespace DB_finalproject.UI
         private void Logout_Click(object sender, EventArgs e)
         {
             this.Close();
+
         }
     }
 }
