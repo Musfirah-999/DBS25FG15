@@ -17,12 +17,7 @@ namespace DB_finalproject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
             Application.Run(new loginUI());
-
-            new loginUI().Show();
-            Application.Run();
-
         }
     }
 }

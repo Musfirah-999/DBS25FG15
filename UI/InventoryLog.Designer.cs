@@ -41,13 +41,13 @@
             this.datagrid = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
+            this.contactbox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.emailBox = new System.Windows.Forms.TextBox();
             this.UserNametxt = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -80,7 +80,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(545, 57);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Inventory details";
+            this.label1.Text = "Medicine Batch Details";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -119,11 +119,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.button3, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.button1, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.AddCustomer, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.button2, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.button3, 0, 3);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(1012, 140);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
@@ -162,7 +162,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(263, 105);
             this.button1.TabIndex = 12;
-            this.button1.Text = "Update Log";
+            this.button1.Text = "Update Medicine Batch";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
@@ -177,7 +177,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(263, 105);
             this.button2.TabIndex = 13;
-            this.button2.Text = "Delete Log";
+            this.button2.Text = "Delete Medicine Batch";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
@@ -222,8 +222,8 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.99999F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.00001F));
-            this.tableLayoutPanel1.Controls.Add(this.comboBox2, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.contactbox, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.emailBox, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.UserNametxt, 0, 0);
@@ -251,8 +251,17 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(374, 75);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Date ";
+            this.label5.Text = "Expiry Date";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // contactbox
+            // 
+            this.contactbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.contactbox.Location = new System.Drawing.Point(458, 165);
+            this.contactbox.Multiline = true;
+            this.contactbox.Name = "contactbox";
+            this.contactbox.Size = new System.Drawing.Size(225, 30);
+            this.contactbox.TabIndex = 7;
             // 
             // label2
             // 
@@ -265,7 +274,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(374, 72);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Request ID";
+            this.label2.Text = "Quantity";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // emailBox
@@ -302,14 +311,14 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(374, 72);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Quantity ";
+            this.label3.Text = "Batch Number";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBox1
             // 
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(457, 25);
+            this.comboBox1.Location = new System.Drawing.Point(457, 24);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(228, 24);
             this.comboBox1.TabIndex = 12;
@@ -317,19 +326,10 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker1.Location = new System.Drawing.Point(458, 242);
+            this.dateTimePicker1.Location = new System.Drawing.Point(471, 242);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(225, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 13;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(457, 168);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(228, 24);
-            this.comboBox2.TabIndex = 14;
             // 
             // InventoryLog
             // 
@@ -370,13 +370,13 @@
         private System.Windows.Forms.DataGridView datagrid;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox contactbox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox emailBox;
         private System.Windows.Forms.Label UserNametxt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
     

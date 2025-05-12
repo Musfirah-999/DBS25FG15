@@ -40,7 +40,7 @@ namespace DB_finalproject
                 MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-                string role = CmbRole.SelectedItem?.ToString();
+            string role = CmbRole.SelectedItem?.ToString();
             Form dash = null;
             switch (role)
             {

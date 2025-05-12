@@ -13,7 +13,7 @@ namespace DB_finalproject.DL
         private string port = "3306";
         private string databaseName = "medilane_pharmacy";
         private string databaseUser = "root";
-        private string databasePassword = "Musfirahzainab123@";
+        private string databasePassword = "Mueeza1234";
 
         private DatabaseHelper() { }
 
@@ -69,10 +69,9 @@ namespace DB_finalproject.DL
 
         public int Scaler(string query) {
             using (var connection = getConnection()) {
-                connection.Open();
                 using (var command = new MySqlCommand(query, connection)) {
                     object result = command.ExecuteScalar();
-                    return result == null ? 0 : Convert.ToInt32(result);
+                    return Convert.ToInt32(result);
                 }
             }
         }

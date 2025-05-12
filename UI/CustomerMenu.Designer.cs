@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.PrescriptionDetails = new System.Windows.Forms.Label();
-            this.Prescription = new System.Windows.Forms.Label();
-            this.Customer = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,9 +43,9 @@
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Green;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.PrescriptionDetails, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.Prescription, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.Customer, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
@@ -55,47 +55,44 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(320, 150);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // PrescriptionDetails
+            // label2
             // 
-            this.PrescriptionDetails.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PrescriptionDetails.AutoSize = true;
-            this.PrescriptionDetails.BackColor = System.Drawing.Color.Green;
-            this.PrescriptionDetails.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrescriptionDetails.ForeColor = System.Drawing.Color.White;
-            this.PrescriptionDetails.Location = new System.Drawing.Point(44, 110);
-            this.PrescriptionDetails.Name = "PrescriptionDetails";
-            this.PrescriptionDetails.Size = new System.Drawing.Size(231, 28);
-            this.PrescriptionDetails.TabIndex = 2;
-            this.PrescriptionDetails.Text = "Prescription details";
-            this.PrescriptionDetails.Click += new System.EventHandler(this.PrescriptionDetails_Click);
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Green;
+            this.label2.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(28, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(263, 28);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Customer Prescription";
             // 
-            // Prescription
+            // label1
             // 
-            this.Prescription.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Prescription.AutoSize = true;
-            this.Prescription.BackColor = System.Drawing.Color.Green;
-            this.Prescription.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Prescription.ForeColor = System.Drawing.Color.White;
-            this.Prescription.Location = new System.Drawing.Point(28, 59);
-            this.Prescription.Name = "Prescription";
-            this.Prescription.Size = new System.Drawing.Size(263, 28);
-            this.Prescription.TabIndex = 1;
-            this.Prescription.Text = "Customer Prescription";
-            this.Prescription.Click += new System.EventHandler(this.Prescription_Click);
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Green;
+            this.label1.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(100, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 28);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Customer";
             // 
-            // Customer
+            // label3
             // 
-            this.Customer.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Customer.AutoSize = true;
-            this.Customer.BackColor = System.Drawing.Color.Green;
-            this.Customer.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Customer.ForeColor = System.Drawing.Color.White;
-            this.Customer.Location = new System.Drawing.Point(100, 10);
-            this.Customer.Name = "Customer";
-            this.Customer.Size = new System.Drawing.Size(119, 28);
-            this.Customer.TabIndex = 0;
-            this.Customer.Text = "Customer";
-            this.Customer.Click += new System.EventHandler(this.Customer_Click);
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Green;
+            this.label3.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(44, 111);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(231, 28);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Prescription details";
             // 
             // CustomerMenu
             // 
@@ -114,8 +111,8 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label Prescription;
-        private System.Windows.Forms.Label Customer;
-        private System.Windows.Forms.Label PrescriptionDetails;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.StockRequestDetails = new System.Windows.Forms.Label();
-            this.StockRequest = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,49 +42,47 @@
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Green;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.StockRequestDetails, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.StockRequest, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-3, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(277, 115);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(303, 161);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // StockRequestDetails
+            // label2
             // 
-            this.StockRequestDetails.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.StockRequestDetails.AutoSize = true;
-            this.StockRequestDetails.BackColor = System.Drawing.Color.Green;
-            this.StockRequestDetails.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StockRequestDetails.ForeColor = System.Drawing.Color.White;
-            this.StockRequestDetails.Location = new System.Drawing.Point(13, 72);
-            this.StockRequestDetails.Name = "StockRequestDetails";
-            this.StockRequestDetails.Size = new System.Drawing.Size(250, 28);
-            this.StockRequestDetails.TabIndex = 1;
-            this.StockRequestDetails.Text = "Stock Request Details";
-            this.StockRequestDetails.Click += new System.EventHandler(this.StockRequestDetails_Click);
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Green;
+            this.label2.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(26, 106);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(250, 28);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Stock Request Details";
             // 
-            // StockRequest
+            // label1
             // 
-            this.StockRequest.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.StockRequest.AutoSize = true;
-            this.StockRequest.BackColor = System.Drawing.Color.Green;
-            this.StockRequest.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StockRequest.ForeColor = System.Drawing.Color.White;
-            this.StockRequest.Location = new System.Drawing.Point(55, 14);
-            this.StockRequest.Name = "StockRequest";
-            this.StockRequest.Size = new System.Drawing.Size(167, 28);
-            this.StockRequest.TabIndex = 0;
-            this.StockRequest.Text = "Stock Request";
-            this.StockRequest.Click += new System.EventHandler(this.StockRequest_Click);
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Green;
+            this.label1.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(68, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(167, 28);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Stock Request";
             // 
             // StockMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(271, 116);
+            this.ClientSize = new System.Drawing.Size(297, 162);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "StockMenu";
             this.Text = "StockMenu";
@@ -97,7 +95,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label StockRequestDetails;
-        private System.Windows.Forms.Label StockRequest;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -21,10 +21,5 @@ namespace DB_finalproject.UI
         {
 
         }
-
-        private void Logout_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }

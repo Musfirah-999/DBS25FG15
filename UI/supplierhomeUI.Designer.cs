@@ -37,7 +37,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.Logout = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.medilane = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -66,7 +66,7 @@
             this.tableLayoutPanel1.Controls.Add(this.button3, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox4, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox7, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.Logout, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.button6, 1, 3);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(253, 229);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
@@ -174,21 +174,20 @@
             this.pictureBox7.TabIndex = 11;
             this.pictureBox7.TabStop = false;
             // 
-            // Logout
+            // button6
             // 
-            this.Logout.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Logout.BackColor = System.Drawing.Color.Green;
-            this.Logout.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Logout.ForeColor = System.Drawing.Color.White;
-            this.Logout.Location = new System.Drawing.Point(283, 126);
-            this.Logout.Name = "Logout";
-            this.Logout.Size = new System.Drawing.Size(276, 36);
-            this.Logout.TabIndex = 9;
-            this.Logout.Text = "Logout";
-            this.Logout.UseVisualStyleBackColor = false;
-            this.Logout.Click += new System.EventHandler(this.Logout_Click);
+            this.button6.BackColor = System.Drawing.Color.Green;
+            this.button6.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(283, 126);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(276, 36);
+            this.button6.TabIndex = 9;
+            this.button6.Text = "Logout";
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -253,7 +252,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button Logout;
+        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label medilane;

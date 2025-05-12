@@ -17,17 +17,5 @@ namespace DB_finalproject.UI
             InitializeComponent();
         }
 
-        private void Medicine_Click(object sender, EventArgs e)
-        {
-            MedicineUI medicine = new MedicineUI();
-            medicine.Show();
-            this.Close();
-        }
-        private void MedicineBatch_Click(object sender, EventArgs e)
-        {
-            MedicineBatch medicineBatch = new MedicineBatch();
-            medicineBatch.Show();
-            this.Close();
-        }
     }
 }
