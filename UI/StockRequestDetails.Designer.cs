@@ -33,17 +33,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.AddCustomer = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.datagrid = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.contactbox = new System.Windows.Forms.TextBox();
+            this.medcomboBox = new System.Windows.Forms.ComboBox();
+            this.quantitybox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.emailBox = new System.Windows.Forms.TextBox();
-            this.UserNametxt = new System.Windows.Forms.Label();
+            this.reqcomboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.UserNametxt = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -106,6 +106,7 @@
             this.AddCustomer.TabIndex = 11;
             this.AddCustomer.Text = "Add Medicine Batch";
             this.AddCustomer.UseVisualStyleBackColor = false;
+            this.AddCustomer.Click += new System.EventHandler(this.AddCustomer_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -128,21 +129,6 @@
             this.tableLayoutPanel2.TabIndex = 14;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.Green;
-            this.button3.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(3, 169);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(263, 77);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Back";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -157,6 +143,22 @@
             this.button2.TabIndex = 13;
             this.button2.Text = "Delete Medicine Batch";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.BackColor = System.Drawing.Color.Green;
+            this.button3.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(3, 169);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(263, 77);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "Back";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
             // 
@@ -187,10 +189,10 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.99999F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.00001F));
-            this.tableLayoutPanel1.Controls.Add(this.contactbox, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.medcomboBox, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.quantitybox, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.emailBox, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.reqcomboBox, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.UserNametxt, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-6, 140);
@@ -202,14 +204,23 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(762, 291);
             this.tableLayoutPanel1.TabIndex = 18;
             // 
-            // contactbox
+            // medcomboBox
             // 
-            this.contactbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.contactbox.Location = new System.Drawing.Point(458, 227);
-            this.contactbox.Multiline = true;
-            this.contactbox.Name = "contactbox";
-            this.contactbox.Size = new System.Drawing.Size(225, 30);
-            this.contactbox.TabIndex = 7;
+            this.medcomboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.medcomboBox.FormattingEnabled = true;
+            this.medcomboBox.Location = new System.Drawing.Point(457, 135);
+            this.medcomboBox.Name = "medcomboBox";
+            this.medcomboBox.Size = new System.Drawing.Size(228, 24);
+            this.medcomboBox.TabIndex = 13;
+            // 
+            // quantitybox
+            // 
+            this.quantitybox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.quantitybox.Location = new System.Drawing.Point(458, 227);
+            this.quantitybox.Multiline = true;
+            this.quantitybox.Name = "quantitybox";
+            this.quantitybox.Size = new System.Drawing.Size(225, 30);
+            this.quantitybox.TabIndex = 7;
             // 
             // label2
             // 
@@ -225,28 +236,14 @@
             this.label2.Text = "Quantity";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // emailBox
+            // reqcomboBox
             // 
-            this.emailBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.emailBox.Location = new System.Drawing.Point(458, 130);
-            this.emailBox.Multiline = true;
-            this.emailBox.Name = "emailBox";
-            this.emailBox.Size = new System.Drawing.Size(225, 30);
-            this.emailBox.TabIndex = 5;
-            // 
-            // UserNametxt
-            // 
-            this.UserNametxt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.UserNametxt.AutoSize = true;
-            this.UserNametxt.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserNametxt.Location = new System.Drawing.Point(3, 97);
-            this.UserNametxt.Name = "UserNametxt";
-            this.UserNametxt.Size = new System.Drawing.Size(374, 97);
-            this.UserNametxt.TabIndex = 0;
-            this.UserNametxt.Text = "Medicine Name";
-            this.UserNametxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.reqcomboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.reqcomboBox.FormattingEnabled = true;
+            this.reqcomboBox.Location = new System.Drawing.Point(457, 36);
+            this.reqcomboBox.Name = "reqcomboBox";
+            this.reqcomboBox.Size = new System.Drawing.Size(228, 24);
+            this.reqcomboBox.TabIndex = 12;
             // 
             // label3
             // 
@@ -262,14 +259,19 @@
             this.label3.Text = "Request ID";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // UserNametxt
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(457, 36);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(228, 24);
-            this.comboBox1.TabIndex = 12;
+            this.UserNametxt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.UserNametxt.AutoSize = true;
+            this.UserNametxt.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserNametxt.Location = new System.Drawing.Point(3, 97);
+            this.UserNametxt.Name = "UserNametxt";
+            this.UserNametxt.Size = new System.Drawing.Size(374, 97);
+            this.UserNametxt.TabIndex = 0;
+            this.UserNametxt.Text = "Medicine Name";
+            this.UserNametxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // StockRequestDetails
             // 
@@ -285,6 +287,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StockRequestDetails";
             this.Text = "StockRequestDetails";
+            this.Load += new System.EventHandler(this.StockRequestDetails_Load);
             this.panel3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -306,12 +309,12 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DataGridView datagrid;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox contactbox;
+        private System.Windows.Forms.TextBox quantitybox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox emailBox;
         private System.Windows.Forms.Label UserNametxt;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox reqcomboBox;
+        private System.Windows.Forms.ComboBox medcomboBox;
     }
 }
 

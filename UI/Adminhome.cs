@@ -17,15 +17,23 @@ namespace DB_finalproject.UI
             InitializeComponent();
         }
 
+
+        private void AdminhomeUI_Load(object sender, EventArgs e)
+        {
+        }
+
+
         private void MedicineMenu_Click(object sender, EventArgs e)
         {
             MedicineMenu medicine = new MedicineMenu();
+            this.Hide();
             medicine.Show();
         }
 
         private void Customer_Click(object sender, EventArgs e)
         {
             CustomerMenu customer = new CustomerMenu();
+            this.Hide();
             customer.Show();
         }
 
@@ -61,12 +69,13 @@ namespace DB_finalproject.UI
         {
             StockMenu stock = new StockMenu();
             stock.Show();
-            this.Hide();
+           
         }
 
         private void Logout_Click(object sender, EventArgs e)
         {
             this.Close();
+
         }
     }
 }

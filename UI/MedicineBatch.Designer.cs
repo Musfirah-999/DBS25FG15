@@ -28,31 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MedicineBatch));
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.AddCustomer = new System.Windows.Forms.Button();
+            this.Addbtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.backbtn = new System.Windows.Forms.Button();
+            this.updatebtn = new System.Windows.Forms.Button();
+            this.deletebtn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.datagrid = new System.Windows.Forms.DataGridView();
+            this.mbdataViewGrid = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
-            this.contactbox = new System.Windows.Forms.TextBox();
+            this.quantitytxtbox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.emailBox = new System.Windows.Forms.TextBox();
+            this.batchnotxtbox = new System.Windows.Forms.TextBox();
             this.UserNametxt = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.namecomboBox = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.datagrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mbdataViewGrid)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,20 +98,21 @@
             this.label4.Text = "Medilane Pharmacy ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // AddCustomer
+            // Addbtn
             // 
-            this.AddCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Addbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddCustomer.BackColor = System.Drawing.Color.Green;
-            this.AddCustomer.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddCustomer.ForeColor = System.Drawing.Color.White;
-            this.AddCustomer.Location = new System.Drawing.Point(3, 3);
-            this.AddCustomer.Name = "AddCustomer";
-            this.AddCustomer.Size = new System.Drawing.Size(263, 105);
-            this.AddCustomer.TabIndex = 11;
-            this.AddCustomer.Text = "Add Medicine Batch";
-            this.AddCustomer.UseVisualStyleBackColor = false;
+            this.Addbtn.BackColor = System.Drawing.Color.Green;
+            this.Addbtn.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Addbtn.ForeColor = System.Drawing.Color.White;
+            this.Addbtn.Location = new System.Drawing.Point(3, 3);
+            this.Addbtn.Name = "Addbtn";
+            this.Addbtn.Size = new System.Drawing.Size(263, 105);
+            this.Addbtn.TabIndex = 11;
+            this.Addbtn.Text = "Add Medicine Batch";
+            this.Addbtn.UseVisualStyleBackColor = false;
+            this.Addbtn.Click += new System.EventHandler(this.AddCustomer_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -119,11 +121,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.button3, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.button1, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.AddCustomer, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button2, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBox, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.backbtn, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.updatebtn, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.Addbtn, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.deletebtn, 0, 2);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(1012, 140);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
@@ -132,66 +134,70 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(269, 506);
             this.tableLayoutPanel2.TabIndex = 14;
             // 
-            // button3
+            // pictureBox
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.Green;
-            this.button3.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(3, 336);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(263, 105);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Back";
-            this.button3.UseVisualStyleBackColor = false;
+            this.pictureBox.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox.Image")));
+            this.pictureBox.Location = new System.Drawing.Point(3, 447);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(263, 56);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox.TabIndex = 18;
+            this.pictureBox.TabStop = false;
             // 
-            // button1
+            // backbtn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.backbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.Green;
-            this.button1.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(3, 114);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(263, 105);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Update Medicine Batch";
-            this.button1.UseVisualStyleBackColor = false;
+            this.backbtn.BackColor = System.Drawing.Color.Green;
+            this.backbtn.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backbtn.ForeColor = System.Drawing.Color.White;
+            this.backbtn.Location = new System.Drawing.Point(3, 336);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(263, 105);
+            this.backbtn.TabIndex = 14;
+            this.backbtn.Text = "Back";
+            this.backbtn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // updatebtn
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.updatebtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.Green;
-            this.button2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(3, 225);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(263, 105);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Delete Medicine Batch";
-            this.button2.UseVisualStyleBackColor = false;
+            this.updatebtn.BackColor = System.Drawing.Color.Green;
+            this.updatebtn.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updatebtn.ForeColor = System.Drawing.Color.White;
+            this.updatebtn.Location = new System.Drawing.Point(3, 114);
+            this.updatebtn.Name = "updatebtn";
+            this.updatebtn.Size = new System.Drawing.Size(263, 105);
+            this.updatebtn.TabIndex = 12;
+            this.updatebtn.Text = "Update Medicine Batch";
+            this.updatebtn.UseVisualStyleBackColor = false;
+            this.updatebtn.Click += new System.EventHandler(this.updatebtn_Click);
             // 
-            // pictureBox1
+            // deletebtn
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.deletebtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 447);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(263, 56);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            this.deletebtn.BackColor = System.Drawing.Color.Green;
+            this.deletebtn.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deletebtn.ForeColor = System.Drawing.Color.White;
+            this.deletebtn.Location = new System.Drawing.Point(3, 225);
+            this.deletebtn.Name = "deletebtn";
+            this.deletebtn.Size = new System.Drawing.Size(263, 105);
+            this.deletebtn.TabIndex = 13;
+            this.deletebtn.Text = "Delete Medicine Batch";
+            this.deletebtn.UseVisualStyleBackColor = false;
+            this.deletebtn.Click += new System.EventHandler(this.deletebtn_Click);
             // 
             // pictureBox2
             // 
@@ -203,16 +209,17 @@
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
             // 
-            // datagrid
+            // mbdataViewGrid
             // 
-            this.datagrid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.datagrid.BackgroundColor = System.Drawing.Color.Green;
-            this.datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datagrid.Location = new System.Drawing.Point(4, 437);
-            this.datagrid.Name = "datagrid";
-            this.datagrid.RowHeadersWidth = 62;
-            this.datagrid.Size = new System.Drawing.Size(1005, 221);
-            this.datagrid.TabIndex = 17;
+            this.mbdataViewGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mbdataViewGrid.BackgroundColor = System.Drawing.Color.Green;
+            this.mbdataViewGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.mbdataViewGrid.Location = new System.Drawing.Point(4, 437);
+            this.mbdataViewGrid.Name = "mbdataViewGrid";
+            this.mbdataViewGrid.RowHeadersWidth = 62;
+            this.mbdataViewGrid.Size = new System.Drawing.Size(1005, 221);
+            this.mbdataViewGrid.TabIndex = 17;
+            this.mbdataViewGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.mbdataViewGrid_CellContentClick);
             // 
             // tableLayoutPanel1
             // 
@@ -223,13 +230,13 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.99999F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.00001F));
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.contactbox, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.quantitytxtbox, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.emailBox, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.batchnotxtbox, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.UserNametxt, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.dateTimePicker1, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.namecomboBox, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.dateTimePicker, 1, 3);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-6, 140);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
@@ -254,14 +261,14 @@
             this.label5.Text = "Expiry Date";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // contactbox
+            // quantitytxtbox
             // 
-            this.contactbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.contactbox.Location = new System.Drawing.Point(458, 165);
-            this.contactbox.Multiline = true;
-            this.contactbox.Name = "contactbox";
-            this.contactbox.Size = new System.Drawing.Size(225, 30);
-            this.contactbox.TabIndex = 7;
+            this.quantitytxtbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.quantitytxtbox.Location = new System.Drawing.Point(458, 165);
+            this.quantitytxtbox.Multiline = true;
+            this.quantitytxtbox.Name = "quantitytxtbox";
+            this.quantitytxtbox.Size = new System.Drawing.Size(225, 30);
+            this.quantitytxtbox.TabIndex = 7;
             // 
             // label2
             // 
@@ -277,14 +284,14 @@
             this.label2.Text = "Quantity";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // emailBox
+            // batchnotxtbox
             // 
-            this.emailBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.emailBox.Location = new System.Drawing.Point(458, 93);
-            this.emailBox.Multiline = true;
-            this.emailBox.Name = "emailBox";
-            this.emailBox.Size = new System.Drawing.Size(225, 30);
-            this.emailBox.TabIndex = 5;
+            this.batchnotxtbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.batchnotxtbox.Location = new System.Drawing.Point(458, 93);
+            this.batchnotxtbox.Multiline = true;
+            this.batchnotxtbox.Name = "batchnotxtbox";
+            this.batchnotxtbox.Size = new System.Drawing.Size(225, 30);
+            this.batchnotxtbox.TabIndex = 5;
             // 
             // UserNametxt
             // 
@@ -314,22 +321,22 @@
             this.label3.Text = "Batch Number";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // namecomboBox
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(457, 25);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(228, 24);
-            this.comboBox1.TabIndex = 12;
+            this.namecomboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.namecomboBox.FormattingEnabled = true;
+            this.namecomboBox.Location = new System.Drawing.Point(457, 24);
+            this.namecomboBox.Name = "namecomboBox";
+            this.namecomboBox.Size = new System.Drawing.Size(228, 24);
+            this.namecomboBox.TabIndex = 12;
             // 
-            // dateTimePicker1
+            // dateTimePicker
             // 
-            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker1.Location = new System.Drawing.Point(471, 243);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 13;
+            this.dateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTimePicker.Location = new System.Drawing.Point(471, 242);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker.TabIndex = 13;
             // 
             // MedicineBatch
             // 
@@ -337,7 +344,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1279, 645);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.datagrid);
+            this.Controls.Add(this.mbdataViewGrid);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.panel3);
@@ -345,11 +352,12 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MedicineBatch";
             this.Text = "MedicineBatch";
+            this.Load += new System.EventHandler(this.MedicineBatch_Load);
             this.panel3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.datagrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mbdataViewGrid)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -360,23 +368,23 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button AddCustomer;
+        private System.Windows.Forms.Button Addbtn;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button backbtn;
+        private System.Windows.Forms.Button updatebtn;
+        private System.Windows.Forms.Button deletebtn;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.DataGridView datagrid;
+        private System.Windows.Forms.DataGridView mbdataViewGrid;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox contactbox;
+        private System.Windows.Forms.TextBox quantitytxtbox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox emailBox;
+        private System.Windows.Forms.TextBox batchnotxtbox;
         private System.Windows.Forms.Label UserNametxt;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox namecomboBox;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
+        private System.Windows.Forms.PictureBox pictureBox;
     }
 }
     
