@@ -40,7 +40,7 @@ namespace DB_finalproject
                 MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            string role = CmbRole.SelectedItem?.ToString();
+                string role = CmbRole.SelectedItem?.ToString();
             Form dash = null;
             switch (role)
             {
@@ -51,7 +51,7 @@ namespace DB_finalproject
                     dash = new supplierhomeUI();
                     break;
                 case "Customer":
-                    dash = new CustomerUI();
+                    dash = new CustomerHome();
                     break;
                 default:
                     MessageBox.Show("Please select a role.", "No Role", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);

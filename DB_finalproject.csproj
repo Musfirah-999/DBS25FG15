@@ -39,6 +39,9 @@
     <Reference Include="Google.Protobuf, Version=3.30.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>packages\Google.Protobuf.3.30.0\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="K4os.Compression.LZ4, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
       <HintPath>packages\K4os.Compression.LZ4.1.3.8\lib\net462\K4os.Compression.LZ4.dll</HintPath>
     </Reference>
@@ -100,15 +103,26 @@
   <ItemGroup>
     <Compile Include="BL\CustomerBL.cs" />
     <Compile Include="BL\MedicineBL.cs" />
+    <Compile Include="BL\medicine_batchBL.cs" />
+    <Compile Include="BL\ReportBL.cs" />
+    <Compile Include="BL\StBL.cs" />
+    <Compile Include="BL\StDetailBL.cs" />
     <Compile Include="BL\SupplierBL.cs" />
     <Compile Include="BL\UserBL.cs" />
     <Compile Include="DL\CustomerDL.cs" />
     <Compile Include="DL\DatabaseHelper.cs" />
     <Compile Include="DL\MedicineDL.cs" />
+    <Compile Include="DL\Medicine_batchDL.cs" />
+    <Compile Include="DL\ReportDL.cs" />
+    <Compile Include="DL\StDetailDL.cs" />
+    <Compile Include="DL\StDL.cs" />
     <Compile Include="DL\SupplierDL.cs" />
     <Compile Include="DL\UserDL.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Medicine.cs" />
+    <Compile Include="Models\Medicine_batch.cs" />
+    <Compile Include="Models\ST.cs" />
+    <Compile Include="Models\StDetail.cs" />
     <Compile Include="Models\Supplier.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="UI\Adminhome.cs">
@@ -116,6 +130,18 @@
     </Compile>
     <Compile Include="UI\Adminhome.Designer.cs">
       <DependentUpon>Adminhome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CustomerBillUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CustomerBillUI.Designer.cs">
+      <DependentUpon>CustomerBillUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CustomerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CustomerHome.Designer.cs">
+      <DependentUpon>CustomerHome.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\CustomerMenu.cs">
       <SubType>Form</SubType>
@@ -161,11 +187,47 @@
     <Compile Include="UI\MedicineUI.Designer.cs">
       <DependentUpon>MedicineUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\PrescriptionDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PrescriptionDetails.Designer.cs">
+      <DependentUpon>PrescriptionDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PrescriptionUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PrescriptionUI.Designer.cs">
+      <DependentUpon>PrescriptionUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PurchaseOrder.Designer.cs">
+      <DependentUpon>PurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StockRequestDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StockRequestDetails.Designer.cs">
+      <DependentUpon>StockRequestDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\StockMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\StockMenu.Designer.cs">
       <DependentUpon>StockMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StockRequestUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StockRequestUI.Designer.cs">
+      <DependentUpon>StockRequestUI.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\supplierhomeUI.cs">
       <SubType>Form</SubType>
@@ -181,6 +243,12 @@
     </Compile>
     <EmbeddedResource Include="UI\Adminhome.resx">
       <DependentUpon>Adminhome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CustomerBillUI.resx">
+      <DependentUpon>CustomerBillUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CustomerHome.resx">
+      <DependentUpon>CustomerHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CustomerMenu.resx">
       <DependentUpon>CustomerMenu.cs</DependentUpon>
@@ -212,8 +280,26 @@
     <EmbeddedResource Include="UI\MedicineUI.resx">
       <DependentUpon>MedicineUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\PrescriptionDetails.resx">
+      <DependentUpon>PrescriptionDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PrescriptionUI.resx">
+      <DependentUpon>PrescriptionUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PurchaseOrder.resx">
+      <DependentUpon>PurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\StockMenu.resx">
       <DependentUpon>StockMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StockRequestDetails.resx">
+      <DependentUpon>StockRequestDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StockRequestUI.resx">
+      <DependentUpon>StockRequestUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\supplierhomeUI.resx">
       <DependentUpon>supplierhomeUI.cs</DependentUpon>

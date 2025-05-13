@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -66,12 +67,27 @@ namespace DB_finalproject.DL
                 }
             }
         }
-
+        public DataTable ExecuteQuery(string query)
+        {
+            using (var connection = getConnection())
+            {
+                using (var command = new MySqlCommand(query, connection))
+                {
+                    using (var adapter = new MySqlDataAdapter(command))
+                    {
+                        DataTable dt = new DataTable();
+                        adapter.Fill(dt);
+                        return dt;
+                    }
+                }
+            }
+        }
         public int Scaler(string query) {
             using (var connection = getConnection()) {
+                connection.Open();
                 using (var command = new MySqlCommand(query, connection)) {
                     object result = command.ExecuteScalar();
-                    return Convert.ToInt32(result);
+                    return result == null ? 0 : Convert.ToInt32(result);
                 }
             }
         }

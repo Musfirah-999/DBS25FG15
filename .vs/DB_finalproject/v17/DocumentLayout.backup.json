@@ -1,12 +1,446 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\ui\\customerhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\customerhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|c:\\users\\hafiz m moaz\\documents\\github\\dbs25fg15\\ui\\customermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\customermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\ui\\adminhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\adminhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|c:\\users\\hafiz m moaz\\documents\\github\\dbs25fg15\\ui\\adminhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\adminhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\ui\\adminhome.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\adminhome.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\ui\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\ui\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\ui\\customerhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\customerhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\ui\\customerhome.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\customerhome.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\ui\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\ui\\customerbillui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\customerbillui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\ui\\supplierhomeui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\supplierhomeui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\ui\\supplierhomeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\supplierhomeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\ui\\stockrequestui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\stockrequestui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\ui\\stockrequestui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\stockrequestui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\ui\\stockrequestdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\stockrequestdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\ui\\stockrequestdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\stockrequestdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\ui\\stockrequestdetails.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\stockrequestdetails.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\ui\\stockrequestui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\stockrequestui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\ui\\medicineui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\medicineui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\ui\\medicineui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:ui\\medicineui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\bl\\stbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:bl\\stbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\bl\\stdetailbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:bl\\stdetailbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DB_final_project\\DBS25FG15\\BL\\StBL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\dl\\stdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:dl\\stdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\dl\\stdetaildl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:dl\\stdetaildl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC58A08-3B95-43E2-9AD1-A02FA88B57CA}|DB_finalproject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\CustomerMenu.cs",
+              "RelativeDocumentMoniker": "UI\\CustomerMenu.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\CustomerMenu.cs [Design]",
+              "RelativeToolTip": "UI\\CustomerMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T19:16:24.987Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CustomerBillUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\CustomerBillUI.cs",
+              "RelativeDocumentMoniker": "UI\\CustomerBillUI.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\CustomerBillUI.cs [Design]",
+              "RelativeToolTip": "UI\\CustomerBillUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T19:03:35.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CustomerUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\CustomerUI.cs",
+              "RelativeDocumentMoniker": "UI\\CustomerUI.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\CustomerUI.cs [Design]",
+              "RelativeToolTip": "UI\\CustomerUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T19:03:31.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomerHome.cs",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\CustomerHome.cs",
+              "RelativeDocumentMoniker": "UI\\CustomerHome.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\CustomerHome.cs",
+              "RelativeToolTip": "UI\\CustomerHome.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAADwvxYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T19:03:16.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomerHome.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\CustomerHome.Designer.cs",
+              "RelativeDocumentMoniker": "UI\\CustomerHome.Designer.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\CustomerHome.Designer.cs",
+              "RelativeToolTip": "UI\\CustomerHome.Designer.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAqwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T19:01:58.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "supplierhomeUI.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\supplierhomeUI.Designer.cs",
+              "RelativeDocumentMoniker": "UI\\supplierhomeUI.Designer.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\supplierhomeUI.Designer.cs",
+              "RelativeToolTip": "UI\\supplierhomeUI.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T18:28:36.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "supplierhomeUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\supplierhomeUI.cs",
+              "RelativeDocumentMoniker": "UI\\supplierhomeUI.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\supplierhomeUI.cs [Design]",
+              "RelativeToolTip": "UI\\supplierhomeUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T18:28:08.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Adminhome.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\Adminhome.Designer.cs",
+              "RelativeDocumentMoniker": "UI\\Adminhome.Designer.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\Adminhome.Designer.cs*",
+              "RelativeToolTip": "UI\\Adminhome.Designer.cs*",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAawJkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T22:49:50.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Adminhome.cs",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\Adminhome.cs",
+              "RelativeDocumentMoniker": "UI\\Adminhome.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\Adminhome.cs*",
+              "RelativeToolTip": "UI\\Adminhome.cs*",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAUwFIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T18:11:28.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomerHome.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\CustomerHome.cs",
+              "RelativeDocumentMoniker": "UI\\CustomerHome.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\CustomerHome.cs [Design]",
+              "RelativeToolTip": "UI\\CustomerHome.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T18:04:32.383Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StockRequestDetails.cs",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\StockRequestDetails.cs",
+              "RelativeDocumentMoniker": "UI\\StockRequestDetails.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\StockRequestDetails.cs",
+              "RelativeToolTip": "UI\\StockRequestDetails.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAuwCEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T17:30:42.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "StockRequestUI.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\StockRequestUI.Designer.cs",
+              "RelativeDocumentMoniker": "UI\\StockRequestUI.Designer.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\StockRequestUI.Designer.cs",
+              "RelativeToolTip": "UI\\StockRequestUI.Designer.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAAD4v80AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T17:29:05.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MedicineUI.cs",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\MedicineUI.cs",
+              "RelativeDocumentMoniker": "UI\\MedicineUI.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\MedicineUI.cs",
+              "RelativeToolTip": "UI\\MedicineUI.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAIwGYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T17:28:13.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MedicineUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\MedicineUI.cs",
+              "RelativeDocumentMoniker": "UI\\MedicineUI.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\MedicineUI.cs [Design]",
+              "RelativeToolTip": "UI\\MedicineUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T17:27:31.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "StockRequestDetails.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\StockRequestDetails.Designer.cs",
+              "RelativeDocumentMoniker": "UI\\StockRequestDetails.Designer.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\StockRequestDetails.Designer.cs",
+              "RelativeToolTip": "UI\\StockRequestDetails.Designer.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAD4v4EAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T16:22:49.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "StockRequestDetails.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\StockRequestDetails.cs",
+              "RelativeDocumentMoniker": "UI\\StockRequestDetails.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\StockRequestDetails.cs [Design]",
+              "RelativeToolTip": "UI\\StockRequestDetails.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T16:07:13.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StockRequestUI.cs",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\StockRequestUI.cs",
+              "RelativeDocumentMoniker": "UI\\StockRequestUI.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\StockRequestUI.cs",
+              "RelativeToolTip": "UI\\StockRequestUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T15:59:28.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "StockRequestUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\StockRequestUI.cs",
+              "RelativeDocumentMoniker": "UI\\StockRequestUI.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\StockRequestUI.cs [Design]",
+              "RelativeToolTip": "UI\\StockRequestUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T15:59:25.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Adminhome.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\Adminhome.cs",
+              "RelativeDocumentMoniker": "UI\\Adminhome.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\Adminhome.cs [Design]*",
+              "RelativeToolTip": "UI\\Adminhome.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T15:59:08.253Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "StBL.cs",
+              "DocumentMoniker": "D:\\DB_final_project\\DBS25FG15\\BL\\StBL.cs",
+              "ToolTip": "D:\\DB_final_project\\DBS25FG15\\BL\\StBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T15:57:40.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "StDetailDL.cs",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\DL\\StDetailDL.cs",
+              "RelativeDocumentMoniker": "DL\\StDetailDL.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\DL\\StDetailDL.cs",
+              "RelativeToolTip": "DL\\StDetailDL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T15:57:02.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "StDL.cs",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\DL\\StDL.cs",
+              "RelativeDocumentMoniker": "DL\\StDL.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\DL\\StDL.cs",
+              "RelativeToolTip": "DL\\StDL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T15:54:20.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "StDetailBL.cs",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\BL\\StDetailBL.cs",
+              "RelativeDocumentMoniker": "BL\\StDetailBL.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\BL\\StDetailBL.cs",
+              "RelativeToolTip": "BL\\StDetailBL.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T15:52:21.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "StBL.cs",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\BL\\StBL.cs",
+              "RelativeDocumentMoniker": "BL\\StBL.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\BL\\StBL.cs",
+              "RelativeToolTip": "BL\\StBL.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T15:52:12.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T18:58:55.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "loginUI.cs",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\loginUI.cs",
+              "RelativeDocumentMoniker": "UI\\loginUI.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\loginUI.cs",
+              "RelativeToolTip": "UI\\loginUI.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwDUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T18:57:41.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "loginUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\loginUI.cs",
+              "RelativeDocumentMoniker": "UI\\loginUI.cs",
+              "ToolTip": "C:\\Users\\Hafiz M Moaz\\Documents\\GitHub\\DBS25FG15\\UI\\loginUI.cs [Design]",
+              "RelativeToolTip": "UI\\loginUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T17:36:15.66Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

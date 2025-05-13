@@ -14,7 +14,6 @@ namespace DB_finalproject.BL
         private UserDL userDL = new UserDL();
         public bool Login(UserModel user)
         {
-            MessageBox.Show($"{user.Username} - {user.Password}");
             return userDL.Login(user);
         }
     }
