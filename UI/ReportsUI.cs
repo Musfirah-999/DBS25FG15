@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace DB_finalproject.UI
 {
-    public partial class PurchaseOrder: Form
+    public partial class ReportsUI : Form
     {
-        public PurchaseOrder()
+        public ReportsUI()
         {
             InitializeComponent();
-        }
-
-        private void PurchaseOrder_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

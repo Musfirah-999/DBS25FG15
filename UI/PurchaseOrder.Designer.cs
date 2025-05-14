@@ -301,7 +301,7 @@
             // 
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(457, 25);
+            this.comboBox1.Location = new System.Drawing.Point(457, 24);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(228, 24);
             this.comboBox1.TabIndex = 12;
@@ -328,6 +328,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PurchaseOrder";
             this.Text = "PurchaseOrder";
+            this.Load += new System.EventHandler(this.PurchaseOrder_Load);
             this.panel3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

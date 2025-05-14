@@ -110,5 +110,10 @@ namespace DB_finalproject.UI
             medicinedataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             medicinedataGridView.Refresh();
         }
+
+        private void MedicineUI_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
