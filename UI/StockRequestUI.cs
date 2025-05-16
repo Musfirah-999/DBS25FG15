@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
+
 namespace DB_finalproject.UI
 {
     public partial class StockRequestUI: Form
@@ -19,6 +20,7 @@ namespace DB_finalproject.UI
         public StockRequestUI()
         {
             InitializeComponent();
+           
         }
  
      
@@ -57,11 +59,12 @@ namespace DB_finalproject.UI
         {
             ST model = new ST()
             {
-                PharmacistId = 1, // hardcoded for simplicity
+                PharmacistId = 1, 
                 SupplierId = Convert.ToInt32(comboBox1.SelectedValue),
                 RequestDate = dateTimePicker1.Value,
-                Status = "Pending"
+                Status = comboBoxStatus.SelectedItem.ToString() 
             };
+
             StBL bl = new StBL();
             int id = bl.AddRequest(model);
             MessageBox.Show("Stock request added. ID: " + id);
@@ -91,6 +94,12 @@ namespace DB_finalproject.UI
             AdminhomeUI admin = new AdminhomeUI();
             admin.Show();
             this.Close();
+        }
+
+        private void logoutpictureBox_Click(object sender, EventArgs e)
+        {
+            this.Close();
+          
         }
     }
   }

@@ -26,12 +26,12 @@ namespace DB_finalproject.DL
         }
         public int Insert(Supplier s)
         {
-            string query = $"INSERT INTO suppliers(name, email,contact, password_hash, role_id) VALUES('{s.Name}',' {s.Email}', '{s.Contact}', '{s.Password}' , {2} )";
+            string query = $"INSERT INTO suppliers(name, email,contact, password, role_id) VALUES('{s.Name}',' {s.Email}', '{s.Contact}', '{s.Password}' , {2} )";
             return DatabaseHelper.Instance.Update(query);
         }
         public int Update(Supplier s)
         {
-            string query = $"Update suppliers SET name = '{s.Name}' , email = '{s.Email}' ,contact = '{s.Contact}' , password_hash = '{s.Password}' WHERE supplier_id = {s.SupplierId}";
+            string query = $"Update suppliers SET name = '{s.Name}' , email = '{s.Email}' ,contact = '{s.Contact}' , password = '{s.Password}' WHERE supplier_id = {s.SupplierId}";
             return DatabaseHelper.Instance.Update(query);
         }
         public int Delete(int id)

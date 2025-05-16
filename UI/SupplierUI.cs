@@ -102,6 +102,13 @@ namespace DB_finalproject.UI
 
         private void backbtn_Click(object sender, EventArgs e)
         {
+            AdminhomeUI adminhomeUI = new AdminhomeUI();
+            this.Close();
+            adminhomeUI.Show();
+        }
+
+        private void logoutpictureBox_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }

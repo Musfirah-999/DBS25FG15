@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DB_finalproject.BL;
 using DB_finalproject.Models;
 using DB_finalproject.DL;
 
@@ -93,7 +92,9 @@ namespace DB_finalproject.UI
 
         private void backbtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            AdminhomeUI admin = new AdminhomeUI();
+            this.Hide();
+            admin.ShowDialog();
         }
         private void LoadFromDatabase()
         {
@@ -114,6 +115,11 @@ namespace DB_finalproject.UI
         private void MedicineUI_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

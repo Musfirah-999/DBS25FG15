@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace DB_finalproject.Models
 {
-    class Medicine_batch
+    public class PODetails 
     {
-        public int BatchId { get; set; }
-        public int MedicineId { get; set; }
-        public string BatchNumber { get; set; }
+        public int DetailId { get; set; }
+        public int OrderId { get; set; }
         public int Quantity { get; set; }
-        public DateTime ExpiryDate { get; set; }
+        public decimal TotalAmount { get; set; }
     }
 }

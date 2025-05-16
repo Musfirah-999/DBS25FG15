@@ -104,6 +104,8 @@
     <Compile Include="BL\CustomerBL.cs" />
     <Compile Include="BL\MedicineBL.cs" />
     <Compile Include="BL\medicine_batchBL.cs" />
+    <Compile Include="BL\POBL.cs" />
+    <Compile Include="BL\PODetailBL.cs" />
     <Compile Include="BL\ReportBL.cs" />
     <Compile Include="BL\StBL.cs" />
     <Compile Include="BL\StDetailBL.cs" />
@@ -113,6 +115,8 @@
     <Compile Include="DL\DatabaseHelper.cs" />
     <Compile Include="DL\MedicineDL.cs" />
     <Compile Include="DL\Medicine_batchDL.cs" />
+    <Compile Include="DL\PODetailsDL.cs" />
+    <Compile Include="DL\PODL.cs" />
     <Compile Include="DL\ReportDL.cs" />
     <Compile Include="DL\StDetailDL.cs" />
     <Compile Include="DL\StDL.cs" />
@@ -121,6 +125,8 @@
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Medicine.cs" />
     <Compile Include="Models\Medicine_batch.cs" />
+    <Compile Include="Models\PO.cs" />
+    <Compile Include="Models\PODetails.cs" />
     <Compile Include="Models\ST.cs" />
     <Compile Include="Models\StDetail.cs" />
     <Compile Include="Models\Supplier.cs" />
@@ -187,6 +193,24 @@
     <Compile Include="UI\MedicineUI.Designer.cs">
       <DependentUpon>MedicineUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\orderUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\orderUI.Designer.cs">
+      <DependentUpon>orderUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PODetailsUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PODetailsUI.Designer.cs">
+      <DependentUpon>PODetailsUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\POUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\POUI.Designer.cs">
+      <DependentUpon>POUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\PrescriptionDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,12 +222,6 @@
     </Compile>
     <Compile Include="UI\PrescriptionUI.Designer.cs">
       <DependentUpon>PrescriptionUI.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\PurchaseOrder.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\PurchaseOrder.Designer.cs">
-      <DependentUpon>PurchaseOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Report.cs">
       <SubType>Form</SubType>
@@ -280,14 +298,20 @@
     <EmbeddedResource Include="UI\MedicineUI.resx">
       <DependentUpon>MedicineUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\orderUI.resx">
+      <DependentUpon>orderUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PODetailsUI.resx">
+      <DependentUpon>PODetailsUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\POUI.resx">
+      <DependentUpon>POUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\PrescriptionDetails.resx">
       <DependentUpon>PrescriptionDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\PrescriptionUI.resx">
       <DependentUpon>PrescriptionUI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\PurchaseOrder.resx">
-      <DependentUpon>PurchaseOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Report.resx">
       <DependentUpon>Report.cs</DependentUpon>

@@ -29,7 +29,7 @@ namespace DB_finalproject.DL
 
             public int Insert(Customer c)
             {
-                string query = $"INSERT INTO customers(name, email, address, contact, password_hash, role_id) " +
+                string query = $"INSERT INTO customers(name, email, address, contact, password, role_id) " +
                                $"VALUES('{c.Name}', '{c.Email}', '{c.Address}', '{c.Contact}', '{c.Password}', {3})";
                 return DatabaseHelper.Instance.Update(query);
             }
@@ -37,7 +37,7 @@ namespace DB_finalproject.DL
             public int Update(Customer c)
             {
                 string query = $"UPDATE customers SET name = '{c.Name}', email = '{c.Email}', address = '{c.Address}', " +
-                               $"contact = '{c.Contact}', password_hash = '{c.Password}',role_id='{3}' WHERE customer_id = {c.CustomerId}";
+                               $"contact = '{c.Contact}', password = '{c.Password}',role_id='{3}' WHERE customer_id = {c.CustomerId}";
                 return DatabaseHelper.Instance.Update(query);
             }
 

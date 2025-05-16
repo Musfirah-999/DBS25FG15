@@ -27,15 +27,13 @@ namespace DB_finalproject.BL
                 throw new Exception("Email or Contact already exists.");
             }
 
-            string hashedPassword = HashPassword(password);
-
             Customer c = new Customer
             {
                 Name = name,
                 Email = email,
                 Address = address,
                 Contact = contact,
-                Password = hashedPassword
+                Password = password
             };
 
             dl.AddToList(c);
@@ -55,7 +53,7 @@ namespace DB_finalproject.BL
 
         public void Update(int id, string name, string email, string address, string contact, string password)
         {
-            string hashedPassword = HashPassword(password);
+            
             Customer c = new Customer
             {
                 CustomerId = id,
@@ -63,7 +61,7 @@ namespace DB_finalproject.BL
                 Email = email,
                 Address = address,
                 Contact = contact,
-                Password = hashedPassword
+                Password = password
             };
             dl.Update(c);
         }
@@ -78,18 +76,6 @@ namespace DB_finalproject.BL
             return dl.GetAll();
         }
 
-        private string HashPassword(string password)
-        {
-            using (SHA256 sha = SHA256.Create())
-            {
-                byte[] bytes = sha.ComputeHash(Encoding.UTF8.GetBytes(password));
-                StringBuilder builder = new StringBuilder();
-                foreach (var b in bytes)
-                {
-                    builder.Append(b.ToString("x2"));
-                }
-                return builder.ToString();
-            }
-        }
+       
     }
 }

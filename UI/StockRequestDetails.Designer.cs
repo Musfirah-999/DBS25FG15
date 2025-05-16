@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StockRequestDetails));
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,11 +45,13 @@
             this.RequestComboxBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.UserNametxt = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -102,7 +105,7 @@
             this.AddMedicine.ForeColor = System.Drawing.Color.White;
             this.AddMedicine.Location = new System.Drawing.Point(3, 3);
             this.AddMedicine.Name = "AddMedicine";
-            this.AddMedicine.Size = new System.Drawing.Size(263, 77);
+            this.AddMedicine.Size = new System.Drawing.Size(263, 106);
             this.AddMedicine.TabIndex = 11;
             this.AddMedicine.Text = "Add Medicine Batch";
             this.AddMedicine.UseVisualStyleBackColor = false;
@@ -115,6 +118,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.pictureBox3, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.AddMedicine, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.Delete, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.button3, 0, 2);
@@ -125,7 +129,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(269, 335);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(269, 451);
             this.tableLayoutPanel2.TabIndex = 14;
             // 
             // Delete
@@ -136,9 +140,9 @@
             this.Delete.BackColor = System.Drawing.Color.Green;
             this.Delete.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Delete.ForeColor = System.Drawing.Color.White;
-            this.Delete.Location = new System.Drawing.Point(3, 86);
+            this.Delete.Location = new System.Drawing.Point(3, 115);
             this.Delete.Name = "Delete";
-            this.Delete.Size = new System.Drawing.Size(263, 77);
+            this.Delete.Size = new System.Drawing.Size(263, 106);
             this.Delete.TabIndex = 13;
             this.Delete.Text = "Delete Medicine Batch";
             this.Delete.UseVisualStyleBackColor = false;
@@ -152,12 +156,13 @@
             this.button3.BackColor = System.Drawing.Color.Green;
             this.button3.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(3, 169);
+            this.button3.Location = new System.Drawing.Point(3, 227);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(263, 77);
+            this.button3.Size = new System.Drawing.Size(263, 106);
             this.button3.TabIndex = 14;
             this.button3.Text = "Back";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox2
             // 
@@ -207,7 +212,7 @@
             // 
             this.MedicineCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MedicineCombobox.FormattingEnabled = true;
-            this.MedicineCombobox.Location = new System.Drawing.Point(457, 135);
+            this.MedicineCombobox.Location = new System.Drawing.Point(457, 133);
             this.MedicineCombobox.Name = "MedicineCombobox";
             this.MedicineCombobox.Size = new System.Drawing.Size(228, 24);
             this.MedicineCombobox.TabIndex = 13;
@@ -239,7 +244,7 @@
             // 
             this.RequestComboxBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.RequestComboxBox.FormattingEnabled = true;
-            this.RequestComboxBox.Location = new System.Drawing.Point(457, 36);
+            this.RequestComboxBox.Location = new System.Drawing.Point(457, 38);
             this.RequestComboxBox.Name = "RequestComboxBox";
             this.RequestComboxBox.Size = new System.Drawing.Size(228, 24);
             this.RequestComboxBox.TabIndex = 12;
@@ -272,6 +277,21 @@
             this.UserNametxt.Text = "Medicine Name";
             this.UserNametxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(3, 339);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(263, 109);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 19;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
             // StockRequestDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -293,6 +313,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -314,6 +335,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox RequestComboxBox;
         private System.Windows.Forms.ComboBox MedicineCombobox;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

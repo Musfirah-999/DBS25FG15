@@ -7,49 +7,48 @@ using System.Text;
 using DB_finalproject.DL;
 using DB_finalproject.Models;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DB_finalproject.BL
 {
     class medicine_batchBL
     {
-        public DataTable GetAllBatchesTable()
+        private readonly Medicine_batchDL dal = new Medicine_batchDL();
+
+        public bool AddBatch(Medicine_batch batch)
         {
-            return Medicine_batchDL.GetAllBatches();
+            Validate(batch);
+         
+            return dal.Add(batch);
         }
 
-        public Dictionary<string, int> GetMedicineMap()
+        public bool UpdateBatch(Medicine_batch batch)
         {
-            return Medicine_batchDL.GetMedicineIdMap();
+            Validate(batch);
+            return dal.Update(batch);
         }
 
-        public void AddToDB(string batchNumber, DateTime expiry, int medicineId, int quantity)
+        public bool DeleteBatch(int batchId)
         {
-            var batch = new Medicine_batch
-            {
-                BatchNumber = batchNumber,
-                ExpiryDate = expiry,
-                MedicineId = medicineId,
-                Quantity = quantity
-            };
-            Medicine_batchDL.InsertBatch(batch);
+            return dal.Delete(batchId);
         }
 
-        public void UpdateBatch(int batchId, string batchNumber, DateTime expiry, int medicineId, int quantity)
+        public DataTable GetAllBatches()
         {
-            var batch = new Medicine_batch
-            {
-                BatchId = batchId,
-                BatchNumber = batchNumber,
-                ExpiryDate = expiry,
-                MedicineId = medicineId,
-                Quantity = quantity
-            };
-            Medicine_batchDL.UpdateBatch(batch);
+            return dal.GetAll();
         }
 
-        public void DeleteBatch(int batchId)
+        public DataTable GetMedicineList()
         {
-            Medicine_batchDL.DeleteBatch(batchId);
+            return dal.GetMedicines();
+        }
+
+        private void Validate(Medicine_batch batch)
+        {
+            if (string.IsNullOrWhiteSpace(batch.BatchNumber))
+                throw new Exception("Batch Number is required.");
+            if (batch.Quantity <= 0)
+                throw new Exception("Quantity must be greater than 0.");
         }
     }
 }

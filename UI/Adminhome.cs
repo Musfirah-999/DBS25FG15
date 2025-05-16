@@ -52,9 +52,9 @@ namespace DB_finalproject.UI
 
         private void PurchaseOrder_Click(object sender, EventArgs e)
         {
-            PurchaseOrder purchase = new PurchaseOrder();
-            purchase.Show();
+          orderUI orderUI = new orderUI();
             this.Hide();
+            orderUI.Show();
         }
 
         private void stock_Click(object sender, EventArgs e)
@@ -74,9 +74,9 @@ namespace DB_finalproject.UI
         private void Report_Click(object sender, EventArgs e)
         {
 
-            Report report = new Report();
+          Report r = new Report();
             this.Hide();
-            report.Show();
+            r.Show();
         }
 
         private void Logout_Click(object sender, EventArgs e)

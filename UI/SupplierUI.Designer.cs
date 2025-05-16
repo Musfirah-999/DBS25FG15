@@ -329,6 +329,7 @@
             this.logoutpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logoutpictureBox.TabIndex = 15;
             this.logoutpictureBox.TabStop = false;
+            this.logoutpictureBox.Click += new System.EventHandler(this.logoutpictureBox_Click);
             // 
             // supplierdataGridView
             // 

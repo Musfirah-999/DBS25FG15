@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MedicineBatch));
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -36,7 +37,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.datagrid = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -48,12 +48,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.logoutpictureBox = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutpictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -111,6 +112,7 @@
             this.AddCustomer.TabIndex = 11;
             this.AddCustomer.Text = "Add Medicine Batch";
             this.AddCustomer.UseVisualStyleBackColor = false;
+            this.AddCustomer.Click += new System.EventHandler(this.AddCustomer_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -119,11 +121,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.logoutpictureBox, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.button3, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.button1, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.AddCustomer, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.button2, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 0, 4);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(1012, 140);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
@@ -149,6 +151,7 @@
             this.button3.TabIndex = 14;
             this.button3.Text = "Back";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
@@ -164,6 +167,7 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "Update Medicine Batch";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -179,19 +183,7 @@
             this.button2.TabIndex = 13;
             this.button2.Text = "Delete Medicine Batch";
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 447);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(263, 56);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox2
             // 
@@ -213,6 +205,7 @@
             this.datagrid.RowHeadersWidth = 62;
             this.datagrid.Size = new System.Drawing.Size(1005, 221);
             this.datagrid.TabIndex = 17;
+            this.datagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_CellContentClick);
             // 
             // tableLayoutPanel1
             // 
@@ -326,10 +319,25 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker1.Location = new System.Drawing.Point(471, 243);
+            this.dateTimePicker1.Location = new System.Drawing.Point(471, 242);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 13;
+            // 
+            // logoutpictureBox
+            // 
+            this.logoutpictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.logoutpictureBox.BackColor = System.Drawing.SystemColors.Control;
+            this.logoutpictureBox.Image = ((System.Drawing.Image)(resources.GetObject("logoutpictureBox.Image")));
+            this.logoutpictureBox.Location = new System.Drawing.Point(3, 447);
+            this.logoutpictureBox.Name = "logoutpictureBox";
+            this.logoutpictureBox.Size = new System.Drawing.Size(263, 56);
+            this.logoutpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logoutpictureBox.TabIndex = 16;
+            this.logoutpictureBox.TabStop = false;
+            this.logoutpictureBox.Click += new System.EventHandler(this.logoutpictureBox_Click);
             // 
             // MedicineBatch
             // 
@@ -347,11 +355,11 @@
             this.Text = "MedicineBatch";
             this.panel3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutpictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -364,7 +372,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DataGridView datagrid;
@@ -377,6 +384,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.PictureBox logoutpictureBox;
     }
 }
     

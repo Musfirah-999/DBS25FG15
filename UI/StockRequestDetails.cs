@@ -98,5 +98,18 @@ namespace DB_finalproject.UI
                 LoadRequestDetailsGrid();
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AdminhomeUI adminhomeUI = new AdminhomeUI();
+            this.Hide();
+            adminhomeUI.Show();
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.Close();   
+        }
     }
 }

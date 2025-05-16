@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StockRequestUI));
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.AddStock = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.logoutpictureBox = new System.Windows.Forms.PictureBox();
             this.delete = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -43,9 +45,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.status = new System.Windows.Forms.ComboBox();
+            this.comboBoxStatus = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutpictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -115,18 +118,35 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.logoutpictureBox, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.AddStock, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.delete, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.button3, 0, 2);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(1012, 140);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(269, 506);
             this.tableLayoutPanel2.TabIndex = 14;
+            // 
+            // logoutpictureBox
+            // 
+            this.logoutpictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.logoutpictureBox.BackColor = System.Drawing.SystemColors.Control;
+            this.logoutpictureBox.Image = ((System.Drawing.Image)(resources.GetObject("logoutpictureBox.Image")));
+            this.logoutpictureBox.Location = new System.Drawing.Point(3, 381);
+            this.logoutpictureBox.Name = "logoutpictureBox";
+            this.logoutpictureBox.Size = new System.Drawing.Size(263, 122);
+            this.logoutpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logoutpictureBox.TabIndex = 17;
+            this.logoutpictureBox.TabStop = false;
+            this.logoutpictureBox.Click += new System.EventHandler(this.logoutpictureBox_Click);
             // 
             // delete
             // 
@@ -194,7 +214,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.dateTimePicker1, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.status, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.comboBoxStatus, 1, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-6, 140);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
@@ -251,7 +271,7 @@
             // 
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(457, 38);
+            this.comboBox1.Location = new System.Drawing.Point(457, 36);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(228, 24);
             this.comboBox1.TabIndex = 12;
@@ -264,16 +284,18 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(227, 22);
             this.dateTimePicker1.TabIndex = 13;
             // 
-            // status
+            // comboBoxStatus
             // 
-            this.status.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.status.FormattingEnabled = true;
-            this.status.Items.AddRange(new object[] {
-            "Pending"});
-            this.status.Location = new System.Drawing.Point(455, 230);
-            this.status.Name = "status";
-            this.status.Size = new System.Drawing.Size(231, 24);
-            this.status.TabIndex = 14;
+            this.comboBoxStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBoxStatus.FormattingEnabled = true;
+            this.comboBoxStatus.Items.AddRange(new object[] {
+            "Pending",
+            "Approved",
+            "Rejected"});
+            this.comboBoxStatus.Location = new System.Drawing.Point(455, 232);
+            this.comboBoxStatus.Name = "comboBoxStatus";
+            this.comboBoxStatus.Size = new System.Drawing.Size(231, 24);
+            this.comboBoxStatus.TabIndex = 14;
             // 
             // StockRequestUI
             // 
@@ -292,6 +314,7 @@
             this.Load += new System.EventHandler(this.StockRequestUI_Load);
             this.panel3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.logoutpictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -316,6 +339,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox status;
+        private System.Windows.Forms.ComboBox comboBoxStatus;
+        private System.Windows.Forms.PictureBox logoutpictureBox;
     }
 }

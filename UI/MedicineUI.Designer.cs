@@ -210,6 +210,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 17;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // backbtn
             // 
@@ -271,7 +272,7 @@
             this.deletebtn.Name = "deletebtn";
             this.deletebtn.Size = new System.Drawing.Size(219, 78);
             this.deletebtn.TabIndex = 13;
-            this.deletebtn.Text = "Delete Customer";
+            this.deletebtn.Text = "Delete Medicine";
             this.deletebtn.UseVisualStyleBackColor = false;
             this.deletebtn.Click += new System.EventHandler(this.deletebtn_Click);
             // 

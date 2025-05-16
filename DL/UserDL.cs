@@ -16,13 +16,13 @@ namespace DB_finalproject.DL
             string query = $@"
 SELECT COUNT(*)
 FROM (
-SELECT name, password_hash FROM pharmacist
+SELECT name, password FROM pharmacist
 UNION ALL
-SELECT name, password_hash FROM suppliers
+SELECT name, password FROM suppliers
 UNION ALL
-SELECT name, password_hash FROM customers
+SELECT name, password FROM customers
 ) AS combined
-WHERE name = '{user.Username}' AND password_hash = '{user.Password}';
+WHERE name = '{user.Username}' AND password = '{user.Password}';
 ";
 
             int result = DatabaseHelper.Instance.Scaler(query);

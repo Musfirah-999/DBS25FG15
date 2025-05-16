@@ -44,7 +44,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.MedicineMenu = new System.Windows.Forms.Button();
             this.Customer = new System.Windows.Forms.Button();
-            this.PurchaseOrder = new System.Windows.Forms.Button();
+            this.ppp = new System.Windows.Forms.Button();
             this.stock = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -121,7 +121,7 @@
             this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.MedicineMenu, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.Customer, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.PurchaseOrder, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.ppp, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.stock, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox6, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox7, 2, 2);
@@ -294,21 +294,21 @@
             this.Customer.UseVisualStyleBackColor = false;
             this.Customer.Click += new System.EventHandler(this.Customer_Click);
             // 
-            // PurchaseOrder
+            // ppp
             // 
-            this.PurchaseOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ppp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PurchaseOrder.BackColor = System.Drawing.Color.Green;
-            this.PurchaseOrder.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PurchaseOrder.ForeColor = System.Drawing.Color.White;
-            this.PurchaseOrder.Location = new System.Drawing.Point(203, 159);
-            this.PurchaseOrder.Name = "PurchaseOrder";
-            this.PurchaseOrder.Size = new System.Drawing.Size(194, 46);
-            this.PurchaseOrder.TabIndex = 8;
-            this.PurchaseOrder.Text = "Purchase Order";
-            this.PurchaseOrder.UseVisualStyleBackColor = false;
-            this.PurchaseOrder.Click += new System.EventHandler(this.PurchaseOrder_Click);
+            this.ppp.BackColor = System.Drawing.Color.Green;
+            this.ppp.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ppp.ForeColor = System.Drawing.Color.White;
+            this.ppp.Location = new System.Drawing.Point(203, 159);
+            this.ppp.Name = "ppp";
+            this.ppp.Size = new System.Drawing.Size(194, 46);
+            this.ppp.TabIndex = 8;
+            this.ppp.Text = "Purchase Order";
+            this.ppp.UseVisualStyleBackColor = false;
+            this.ppp.Click += new System.EventHandler(this.PurchaseOrder_Click);
             // 
             // stock
             // 
@@ -438,7 +438,7 @@
         private System.Windows.Forms.Button Customer;
         private System.Windows.Forms.Button CustomerBill;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button PurchaseOrder;
+        private System.Windows.Forms.Button ppp;
         private System.Windows.Forms.Button stock;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;

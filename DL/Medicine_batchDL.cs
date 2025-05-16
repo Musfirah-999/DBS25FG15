@@ -12,64 +12,49 @@ namespace DB_finalproject.DL
 {
     class Medicine_batchDL
     {
-        public static List<string> GetMedicineList()
+        private readonly DatabaseHelper db = DatabaseHelper.Instance;
+
+        public bool Add(Medicine_batch batch)
         {
-            List<string> medicines = new List<string>();
-            string query = "SELECT name FROM medicines";
-            using (var reader = DatabaseHelper.Instance.GetDataReader(query))
+            MessageBox.Show($"VALUES ({batch.MedicineId}, '{batch.BatchNumber}', '{batch.ExpiryDate:yyyy-MM-dd}', {batch.Quantity})");
+            string query = $"INSERT INTO medicine_batch (medicine_id, batch_number, expiry_date, quantity) " +
+                           $"VALUES ({batch.MedicineId}, '{batch.BatchNumber}', '{batch.ExpiryDate:yyyy-MM-dd}', '{batch.Quantity}')";
+
+            bool output = db.Update(query) > 0;
+
+            if (output)
             {
-                while (reader.Read())
-                {
-                    medicines.Add(reader["name"].ToString());
-                }
+                return output;
             }
-            return medicines;
+
+            // Ensure all code paths return a value
+            return false;
         }
 
-        public static DataTable GetAllBatches()
+        public bool Update(Medicine_batch batch)
         {
-            string query = @"SELECT mb.batch_id, mb.batch_number, mb.quantity, mb.expiry_date, m.name 
-                             FROM medicine_batch mb 
-                             JOIN medicines m ON mb.medicine_id = m.medicine_id";
-            return DatabaseHelper.Instance.GetDataTable(query);
+            string query = $"UPDATE medicine_batch SET medicine_id={batch.MedicineId}, batch_number='{batch.BatchNumber}', " +
+                           $"quantity={batch.Quantity}, expiry_date='{batch.ExpiryDate:yyyy-MM-dd}' " +
+                           $"WHERE batch_id={batch.BatchId}";
+            return db.Update(query) > 0;
         }
 
-        public static void InsertBatch(Medicine_batch batch)
+        public bool Delete(int batchId)
         {
-            string query = $@"INSERT INTO medicine_batch (medicine_id, batch_number, quantity, expiry_date) 
-                              VALUES ('{batch.MedicineId}', '{batch.BatchNumber}', '{batch.Quantity}', '{batch.ExpiryDate:yyyy-MM-dd}')";
-            DatabaseHelper.Instance.Update(query);
+            string query = $"DELETE FROM medicine_batch WHERE batch_id={batchId}";
+            return db.Update(query) > 0;
         }
 
-        public static void UpdateBatch(Medicine_batch batch)
+        public DataTable GetAll()
         {
-            string query = $@"UPDATE medicine_batch 
-                              SET batch_number = '{batch.BatchNumber}', 
-                                  quantity = {batch.Quantity}, 
-                                  expiry_date = '{batch.ExpiryDate:yyyy-MM-dd}', 
-                                  medicine_id = {batch.MedicineId}
-                              WHERE batch_id = {batch.BatchId}";
-            DatabaseHelper.Instance.Update(query);
+            return db.GetDataTable("SELECT b.batch_id, m.name AS medicine_name, b.batch_number, b.quantity, b.expiry_date " +
+                                   "FROM medicine_batch b JOIN medicines m ON b.medicine_id = m.medicine_id");
         }
 
-        public static void DeleteBatch(int batchId)
-        {
-            string query = $"DELETE FROM medicine_batch WHERE batch_id = {batchId}";
-            DatabaseHelper.Instance.Update(query);
-        }
 
-        public static Dictionary<string, int> GetMedicineIdMap()
+        public DataTable GetMedicines()
         {
-            var map = new Dictionary<string, int>();
-            string query = "SELECT medicine_id, name FROM medicines";
-            using (var reader = DatabaseHelper.Instance.GetDataReader(query))
-            {
-                while (reader.Read())
-                {
-                    map[reader["name"].ToString()] = Convert.ToInt32(reader["medicine_id"]);
-                }
-            }
-            return map;
+            return db.GetDataTable("SELECT medicine_id, name FROM medicines");
         }
     }
 }
