@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ namespace DB_finalproject.DL
         private string port = "3306";
         private string databaseName = "medilane_pharmacy";
         private string databaseUser = "root";
-        private string databasePassword = "Musfirahzainab123@";
+        private string databasePassword = "Mueeza1234";
 
         private DatabaseHelper() { }
 
@@ -66,7 +67,21 @@ namespace DB_finalproject.DL
                 }
             }
         }
-
+        public DataTable ExecuteQuery(string query)
+        {
+            using (var connection = getConnection())
+            {
+                using (var command = new MySqlCommand(query, connection))
+                {
+                    using (var adapter = new MySqlDataAdapter(command))
+                    {
+                        DataTable dt = new DataTable();
+                        adapter.Fill(dt);
+                        return dt;
+                    }
+                }
+            }
+        }
         public int Scaler(string query) {
             using (var connection = getConnection()) {
                 connection.Open();

@@ -38,14 +38,14 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.datagrid = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.contactbox = new System.Windows.Forms.TextBox();
-            this.emailBox = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.emailBox = new System.Windows.Forms.TextBox();
+            this.contactbox = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -207,54 +207,19 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(762, 291);
             this.tableLayoutPanel1.TabIndex = 18;
             // 
-            // contactbox
+            // label5
             // 
-            this.contactbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.contactbox.Location = new System.Drawing.Point(458, 93);
-            this.contactbox.Multiline = true;
-            this.contactbox.Name = "contactbox";
-            this.contactbox.Size = new System.Drawing.Size(225, 30);
-            this.contactbox.TabIndex = 7;
-            // 
-            // emailBox
-            // 
-            this.emailBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.emailBox.Location = new System.Drawing.Point(458, 238);
-            this.emailBox.Multiline = true;
-            this.emailBox.Name = "emailBox";
-            this.emailBox.Size = new System.Drawing.Size(225, 30);
-            this.emailBox.TabIndex = 5;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(457, 24);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(228, 24);
-            this.comboBox1.TabIndex = 12;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker1.Location = new System.Drawing.Point(471, 169);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 13;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(374, 72);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Customer Name";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(3, 144);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(374, 72);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Date Issued";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
@@ -270,19 +235,28 @@
             this.label6.Text = "Pharmacist Name";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // label3
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 144);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(374, 72);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Date Issued";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(374, 72);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Customer Name";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(457, 25);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(228, 24);
+            this.comboBox1.TabIndex = 12;
             // 
             // label2
             // 
@@ -297,6 +271,32 @@
             this.label2.TabIndex = 21;
             this.label2.Text = "Total Amount";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // emailBox
+            // 
+            this.emailBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.emailBox.Location = new System.Drawing.Point(458, 238);
+            this.emailBox.Multiline = true;
+            this.emailBox.Name = "emailBox";
+            this.emailBox.Size = new System.Drawing.Size(225, 30);
+            this.emailBox.TabIndex = 5;
+            // 
+            // contactbox
+            // 
+            this.contactbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.contactbox.Location = new System.Drawing.Point(458, 93);
+            this.contactbox.Multiline = true;
+            this.contactbox.Name = "contactbox";
+            this.contactbox.Size = new System.Drawing.Size(225, 30);
+            this.contactbox.TabIndex = 7;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTimePicker1.Location = new System.Drawing.Point(471, 169);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 13;
             // 
             // PrescriptionUI
             // 

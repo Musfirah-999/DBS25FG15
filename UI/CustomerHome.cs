@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace DB_finalproject.UI
 {
-    public partial class MedicineBatch: Form
+    public partial class CustomerHome: Form
     {
-        public MedicineBatch()
+        public CustomerHome()
         {
             InitializeComponent();
+        }
+
+        private void CustomerHome_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void Logout_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

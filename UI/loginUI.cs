@@ -51,7 +51,7 @@ namespace DB_finalproject
                     dash = new supplierhomeUI();
                     break;
                 case "Customer":
-                    dash = new CustomerUI();
+                    dash = new CustomerHome();
                     break;
                 default:
                     MessageBox.Show("Please select a role.", "No Role", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);

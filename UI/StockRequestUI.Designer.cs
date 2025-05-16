@@ -31,19 +31,19 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.AddCustomer = new System.Windows.Forms.Button();
+            this.AddStock = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.delete = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.datagrid = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.suppcombobox = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.contactbox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.status = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -92,21 +92,21 @@
             this.label4.Text = "Medilane Pharmacy ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // AddCustomer
+            // AddStock
             // 
-            this.AddCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.AddStock.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddCustomer.BackColor = System.Drawing.Color.Green;
-            this.AddCustomer.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddCustomer.ForeColor = System.Drawing.Color.White;
-            this.AddCustomer.Location = new System.Drawing.Point(3, 3);
-            this.AddCustomer.Name = "AddCustomer";
-            this.AddCustomer.Size = new System.Drawing.Size(263, 120);
-            this.AddCustomer.TabIndex = 11;
-            this.AddCustomer.Text = "Add Stock Request";
-            this.AddCustomer.UseVisualStyleBackColor = false;
-            this.AddCustomer.Click += new System.EventHandler(this.AddCustomer_Click);
+            this.AddStock.BackColor = System.Drawing.Color.Green;
+            this.AddStock.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddStock.ForeColor = System.Drawing.Color.White;
+            this.AddStock.Location = new System.Drawing.Point(3, 3);
+            this.AddStock.Name = "AddStock";
+            this.AddStock.Size = new System.Drawing.Size(263, 120);
+            this.AddStock.TabIndex = 11;
+            this.AddStock.Text = "Add Stock Request";
+            this.AddStock.UseVisualStyleBackColor = false;
+            this.AddStock.Click += new System.EventHandler(this.AddStock_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -115,8 +115,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.AddCustomer, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button2, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.AddStock, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.delete, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.button3, 0, 2);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(1012, 140);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -128,21 +128,21 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(269, 506);
             this.tableLayoutPanel2.TabIndex = 14;
             // 
-            // button2
+            // delete
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.delete.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.Green;
-            this.button2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(3, 129);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(263, 120);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Delete Stock Request";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.delete.BackColor = System.Drawing.Color.Green;
+            this.delete.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete.ForeColor = System.Drawing.Color.White;
+            this.delete.Location = new System.Drawing.Point(3, 129);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(263, 120);
+            this.delete.TabIndex = 13;
+            this.delete.Text = "Delete Stock Request";
+            this.delete.UseVisualStyleBackColor = false;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
             // button3
             // 
@@ -158,6 +158,7 @@
             this.button3.TabIndex = 14;
             this.button3.Text = "Back";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox2
             // 
@@ -189,11 +190,11 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.99999F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.00001F));
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.suppcombobox, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.dateTimePicker1, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.contactbox, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.dateTimePicker1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.status, 1, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-6, 140);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
@@ -203,28 +204,20 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(762, 291);
             this.tableLayoutPanel1.TabIndex = 18;
             // 
-            // suppcombobox
+            // label3
             // 
-            this.suppcombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.suppcombobox.FormattingEnabled = true;
-            this.suppcombobox.Location = new System.Drawing.Point(457, 38);
-            this.suppcombobox.Name = "suppcombobox";
-            this.suppcombobox.Size = new System.Drawing.Size(228, 24);
-            this.suppcombobox.TabIndex = 14;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 194);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(374, 97);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Status";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(374, 97);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Supplier Name";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -240,36 +233,47 @@
             this.label2.Text = "Date";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // label5
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(374, 97);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Supplier Name";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(3, 194);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(374, 97);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Status";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // contactbox
+            // comboBox1
             // 
-            this.contactbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.contactbox.Location = new System.Drawing.Point(458, 227);
-            this.contactbox.Multiline = true;
-            this.contactbox.Name = "contactbox";
-            this.contactbox.Size = new System.Drawing.Size(225, 30);
-            this.contactbox.TabIndex = 7;
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(457, 38);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(228, 24);
+            this.comboBox1.TabIndex = 12;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker1.Location = new System.Drawing.Point(471, 134);
+            this.dateTimePicker1.Location = new System.Drawing.Point(457, 134);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(227, 22);
             this.dateTimePicker1.TabIndex = 13;
+            // 
+            // status
+            // 
+            this.status.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.status.FormattingEnabled = true;
+            this.status.Items.AddRange(new object[] {
+            "Pending"});
+            this.status.Location = new System.Drawing.Point(455, 230);
+            this.status.Name = "status";
+            this.status.Size = new System.Drawing.Size(231, 24);
+            this.status.TabIndex = 14;
             // 
             // StockRequestUI
             // 
@@ -300,18 +304,18 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button AddCustomer;
+        private System.Windows.Forms.Button AddStock;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button delete;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DataGridView datagrid;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox contactbox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox suppcombobox;
+        private System.Windows.Forms.ComboBox status;
     }
 }

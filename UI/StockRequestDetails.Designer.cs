@@ -31,17 +31,17 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.AddCustomer = new System.Windows.Forms.Button();
+            this.AddMedicine = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Delete = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.datagrid = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.medcomboBox = new System.Windows.Forms.ComboBox();
+            this.MedicineCombobox = new System.Windows.Forms.ComboBox();
             this.quantitybox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.reqcomboBox = new System.Windows.Forms.ComboBox();
+            this.RequestComboxBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.UserNametxt = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
@@ -92,21 +92,21 @@
             this.label4.Text = "Medilane Pharmacy ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // AddCustomer
+            // AddMedicine
             // 
-            this.AddCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.AddMedicine.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddCustomer.BackColor = System.Drawing.Color.Green;
-            this.AddCustomer.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddCustomer.ForeColor = System.Drawing.Color.White;
-            this.AddCustomer.Location = new System.Drawing.Point(3, 3);
-            this.AddCustomer.Name = "AddCustomer";
-            this.AddCustomer.Size = new System.Drawing.Size(263, 77);
-            this.AddCustomer.TabIndex = 11;
-            this.AddCustomer.Text = "Add Medicine Batch";
-            this.AddCustomer.UseVisualStyleBackColor = false;
-            this.AddCustomer.Click += new System.EventHandler(this.AddCustomer_Click);
+            this.AddMedicine.BackColor = System.Drawing.Color.Green;
+            this.AddMedicine.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddMedicine.ForeColor = System.Drawing.Color.White;
+            this.AddMedicine.Location = new System.Drawing.Point(3, 3);
+            this.AddMedicine.Name = "AddMedicine";
+            this.AddMedicine.Size = new System.Drawing.Size(263, 77);
+            this.AddMedicine.TabIndex = 11;
+            this.AddMedicine.Text = "Add Medicine Batch";
+            this.AddMedicine.UseVisualStyleBackColor = false;
+            this.AddMedicine.Click += new System.EventHandler(this.AddMedicine_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -115,8 +115,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.AddCustomer, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button2, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.AddMedicine, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.Delete, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.button3, 0, 2);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(1012, 191);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -127,23 +127,22 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(269, 335);
             this.tableLayoutPanel2.TabIndex = 14;
-            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
-            // button2
+            // Delete
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.Green;
-            this.button2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(3, 86);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(263, 77);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Delete Medicine Batch";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Delete.BackColor = System.Drawing.Color.Green;
+            this.Delete.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Delete.ForeColor = System.Drawing.Color.White;
+            this.Delete.Location = new System.Drawing.Point(3, 86);
+            this.Delete.Name = "Delete";
+            this.Delete.Size = new System.Drawing.Size(263, 77);
+            this.Delete.TabIndex = 13;
+            this.Delete.Text = "Delete Medicine Batch";
+            this.Delete.UseVisualStyleBackColor = false;
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // button3
             // 
@@ -189,10 +188,10 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.99999F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.00001F));
-            this.tableLayoutPanel1.Controls.Add(this.medcomboBox, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.MedicineCombobox, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.quantitybox, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.reqcomboBox, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.RequestComboxBox, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.UserNametxt, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-6, 140);
@@ -204,14 +203,14 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(762, 291);
             this.tableLayoutPanel1.TabIndex = 18;
             // 
-            // medcomboBox
+            // MedicineCombobox
             // 
-            this.medcomboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.medcomboBox.FormattingEnabled = true;
-            this.medcomboBox.Location = new System.Drawing.Point(457, 135);
-            this.medcomboBox.Name = "medcomboBox";
-            this.medcomboBox.Size = new System.Drawing.Size(228, 24);
-            this.medcomboBox.TabIndex = 13;
+            this.MedicineCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.MedicineCombobox.FormattingEnabled = true;
+            this.MedicineCombobox.Location = new System.Drawing.Point(457, 135);
+            this.MedicineCombobox.Name = "MedicineCombobox";
+            this.MedicineCombobox.Size = new System.Drawing.Size(228, 24);
+            this.MedicineCombobox.TabIndex = 13;
             // 
             // quantitybox
             // 
@@ -236,14 +235,14 @@
             this.label2.Text = "Quantity";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // reqcomboBox
+            // RequestComboxBox
             // 
-            this.reqcomboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.reqcomboBox.FormattingEnabled = true;
-            this.reqcomboBox.Location = new System.Drawing.Point(457, 36);
-            this.reqcomboBox.Name = "reqcomboBox";
-            this.reqcomboBox.Size = new System.Drawing.Size(228, 24);
-            this.reqcomboBox.TabIndex = 12;
+            this.RequestComboxBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.RequestComboxBox.FormattingEnabled = true;
+            this.RequestComboxBox.Location = new System.Drawing.Point(457, 36);
+            this.RequestComboxBox.Name = "RequestComboxBox";
+            this.RequestComboxBox.Size = new System.Drawing.Size(228, 24);
+            this.RequestComboxBox.TabIndex = 12;
             // 
             // label3
             // 
@@ -302,10 +301,10 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button AddCustomer;
+        private System.Windows.Forms.Button AddMedicine;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Delete;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DataGridView datagrid;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
@@ -313,8 +312,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label UserNametxt;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox reqcomboBox;
-        private System.Windows.Forms.ComboBox medcomboBox;
+        private System.Windows.Forms.ComboBox RequestComboxBox;
+        private System.Windows.Forms.ComboBox MedicineCombobox;
     }
 }
 

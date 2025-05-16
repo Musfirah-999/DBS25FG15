@@ -104,6 +104,7 @@
     <Compile Include="BL\CustomerBL.cs" />
     <Compile Include="BL\MedicineBL.cs" />
     <Compile Include="BL\medicine_batchBL.cs" />
+    <Compile Include="BL\ReportBL.cs" />
     <Compile Include="BL\StBL.cs" />
     <Compile Include="BL\StDetailBL.cs" />
     <Compile Include="BL\SupplierBL.cs" />
@@ -112,6 +113,7 @@
     <Compile Include="DL\DatabaseHelper.cs" />
     <Compile Include="DL\MedicineDL.cs" />
     <Compile Include="DL\Medicine_batchDL.cs" />
+    <Compile Include="DL\ReportDL.cs" />
     <Compile Include="DL\StDetailDL.cs" />
     <Compile Include="DL\StDL.cs" />
     <Compile Include="DL\SupplierDL.cs" />
@@ -123,7 +125,6 @@
     <Compile Include="Models\StDetail.cs" />
     <Compile Include="Models\Supplier.cs" />
     <Compile Include="Models\UserModel.cs" />
-    <Compile Include="SessionManager.cs" />
     <Compile Include="UI\Adminhome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +136,12 @@
     </Compile>
     <Compile Include="UI\CustomerBillUI.Designer.cs">
       <DependentUpon>CustomerBillUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CustomerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CustomerHome.Designer.cs">
+      <DependentUpon>CustomerHome.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\CustomerMenu.cs">
       <SubType>Form</SubType>
@@ -198,6 +205,12 @@
     <Compile Include="UI\PurchaseOrder.Designer.cs">
       <DependentUpon>PurchaseOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\StockRequestDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +246,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CustomerBillUI.resx">
       <DependentUpon>CustomerBillUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CustomerHome.resx">
+      <DependentUpon>CustomerHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CustomerMenu.resx">
       <DependentUpon>CustomerMenu.cs</DependentUpon>
@@ -272,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\PurchaseOrder.resx">
       <DependentUpon>PurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\StockMenu.resx">
       <DependentUpon>StockMenu.cs</DependentUpon>
